@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_tIeNgvIuEei04LlwpOmL_w" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_tIeNg_IuEei04LlwpOmL_w" comment="" name="RAW_DIR" prompt="RAW_DIR?" promptNeeded="false" type="id_String" value="&quot;/user/apps_dev/mcloan/output/msisdn_hash/&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_tIeNhPIuEei04LlwpOmL_w" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_tIeNhfIuEei04LlwpOmL_w" comment="" name="RAW_DIR" prompt="RAW_DIR?" promptNeeded="false" type="id_String" value="&quot;/user/apps_dev/mcloan/output/msisdn_hash/&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_tIeNhvIuEei04LlwpOmL_w" confirmationNeeded="false" name="PRD">
+    <contextParameter xmi:id="_tIeNh_IuEei04LlwpOmL_w" comment="" name="RAW_DIR" prompt="RAW_DIR?" promptNeeded="false" type="id_String" value="&quot;/user/apps_dev/mcloan/output/msisdn_hash/&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_tIeNiPIuEei04LlwpOmL_w" confirmationNeeded="false" name="UAT">
+    <contextParameter xmi:id="_tIeNifIuEei04LlwpOmL_w" comment="" name="RAW_DIR" prompt="RAW_DIR?" promptNeeded="false" type="id_String" value="&quot;/user/apps_dev/mcloan/output/msisdn_hash/&quot;"/>
+  </talendfile:ContextType>
+</xmi:XMI>

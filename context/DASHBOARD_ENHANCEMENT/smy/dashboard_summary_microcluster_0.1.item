@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_tGsE0fIuEei04LlwpOmL_w" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_tGsE0vIuEei04LlwpOmL_w" comment="Table name" name="PD_DASHBOARD_DLY_SMY_TABLE" prompt="PD_DASHBOARD_DLY_SMY_TABLE?" promptNeeded="false" type="id_String" value="&quot;pd_dashboard_dly_smy&quot;"/>
+    <contextParameter xmi:id="_tGsE0_IuEei04LlwpOmL_w" comment="Schema name" name="PD_DASHBOARD_DLY_SMY_SCHEMA" prompt="PD_DASHBOARD_DLY_SMY_SCHEMA?" promptNeeded="false" type="id_String" value="&quot;smy&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_tGsE1PIuEei04LlwpOmL_w" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_tGsE1fIuEei04LlwpOmL_w" comment="Table name" name="PD_DASHBOARD_DLY_SMY_TABLE" prompt="PD_DASHBOARD_DLY_SMY_TABLE?" promptNeeded="false" type="id_String" value="&quot;pd_dashboard_dly_smy_enhanced&quot;"/>
+    <contextParameter xmi:id="_tGsE1vIuEei04LlwpOmL_w" comment="Schema name" name="PD_DASHBOARD_DLY_SMY_SCHEMA" prompt="PD_DASHBOARD_DLY_SMY_SCHEMA?" promptNeeded="false" type="id_String" value="&quot;smy&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_tGsE1_IuEei04LlwpOmL_w" confirmationNeeded="false" name="PRD">
+    <contextParameter xmi:id="_tGsE2PIuEei04LlwpOmL_w" comment="Table name" name="PD_DASHBOARD_DLY_SMY_TABLE" prompt="PD_DASHBOARD_DLY_SMY_TABLE?" promptNeeded="false" type="id_String" value="&quot;pd_dashboard_dly_smy&quot;"/>
+    <contextParameter xmi:id="_tGsE2fIuEei04LlwpOmL_w" comment="Schema name" name="PD_DASHBOARD_DLY_SMY_SCHEMA" prompt="PD_DASHBOARD_DLY_SMY_SCHEMA?" promptNeeded="false" type="id_String" value="&quot;smy&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_tGsE2vIuEei04LlwpOmL_w" confirmationNeeded="false" name="UAT">
+    <contextParameter xmi:id="_tGsE2_IuEei04LlwpOmL_w" comment="Table name" name="PD_DASHBOARD_DLY_SMY_TABLE" prompt="PD_DASHBOARD_DLY_SMY_TABLE?" promptNeeded="false" type="id_String" value="&quot;smy.pd_dashboard_dly_smy_enhanced&quot;"/>
+    <contextParameter xmi:id="_tGsE3PIuEei04LlwpOmL_w" comment="Schema name" name="PD_DASHBOARD_DLY_SMY_SCHEMA" prompt="PD_DASHBOARD_DLY_SMY_SCHEMA?" promptNeeded="false" type="id_String" value="&quot;smy&quot;"/>
+  </talendfile:ContextType>
+</xmi:XMI>

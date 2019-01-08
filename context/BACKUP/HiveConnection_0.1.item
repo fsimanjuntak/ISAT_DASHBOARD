@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_s_0n0PIuEei04LlwpOmL_w" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_s_0n0fIuEei04LlwpOmL_w" comment="" name="HIVE_TESTCLUSTER_CONNECTION_Database" prompt="HIVE_TESTCLUSTER_CONNECTION_Database?" promptNeeded="false" type="id_String" value="default"/>
+    <contextParameter xmi:id="_s_0n0vIuEei04LlwpOmL_w" comment="" name="HIVE_TESTCLUSTER_CONNECTION_HiveKeyTab" prompt="HIVE_TESTCLUSTER_CONNECTION_HiveKeyTab?" promptNeeded="false" type="id_String" value="/home/hdp-rev/hdp-rev.keytab"/>
+    <contextParameter xmi:id="_s_0n0_IuEei04LlwpOmL_w" comment="" name="HIVE_TESTCLUSTER_CONNECTION_Password" prompt="HIVE_TESTCLUSTER_CONNECTION_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_s_0n1PIuEei04LlwpOmL_w" comment="" name="HIVE_TESTCLUSTER_CONNECTION_HivePrincipal" prompt="HIVE_TESTCLUSTER_CONNECTION_HivePrincipal?" promptNeeded="false" type="id_String" value="hive/_HOST@OFFICE.CORP.INDOSAT.COM"/>
+    <contextParameter xmi:id="_s_0n1fIuEei04LlwpOmL_w" comment="" name="HIVE_TESTCLUSTER_CONNECTION_hiveAdditionalJDBCParameters" prompt="HIVE_TESTCLUSTER_CONNECTION_hiveAdditionalJDBCParameters?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_s_0n1vIuEei04LlwpOmL_w" comment="" name="HIVE_TESTCLUSTER_CONNECTION_Server" prompt="HIVE_TESTCLUSTER_CONNECTION_Server?" promptNeeded="false" type="id_String" value="hdd1-tms0001.office.corp.indosat.com"/>
+    <contextParameter xmi:id="_s_0n1_IuEei04LlwpOmL_w" comment="" name="HIVE_TESTCLUSTER_CONNECTION_HiveKeyTabPrincipal" prompt="HIVE_TESTCLUSTER_CONNECTION_HiveKeyTabPrincipal?" promptNeeded="false" type="id_String" value="hdp-rev@OFFICE.CORP.INDOSAT.COM"/>
+    <contextParameter xmi:id="_s_0n2PIuEei04LlwpOmL_w" comment="" name="HIVE_TESTCLUSTER_CONNECTION_Login" prompt="HIVE_TESTCLUSTER_CONNECTION_Login?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_s_0n2fIuEei04LlwpOmL_w" comment="" name="HIVE_TESTCLUSTER_CONNECTION_Port" prompt="HIVE_TESTCLUSTER_CONNECTION_Port?" promptNeeded="false" type="id_String" value="10000"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_s_0n2vIuEei04LlwpOmL_w" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_s_0n2_IuEei04LlwpOmL_w" comment="" name="HIVE_TESTCLUSTER_CONNECTION_Database" prompt="HIVE_TESTCLUSTER_CONNECTION_Database?" promptNeeded="false" type="id_String" value="default"/>
+    <contextParameter xmi:id="_s_0n3PIuEei04LlwpOmL_w" comment="" name="HIVE_TESTCLUSTER_CONNECTION_HiveKeyTab" prompt="HIVE_TESTCLUSTER_CONNECTION_HiveKeyTab?" promptNeeded="false" type="id_String" value="/home/apps_dev/app_dev.keytab"/>
+    <contextParameter xmi:id="_s_0n3fIuEei04LlwpOmL_w" comment="" name="HIVE_TESTCLUSTER_CONNECTION_Password" prompt="HIVE_TESTCLUSTER_CONNECTION_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_s_0n3vIuEei04LlwpOmL_w" comment="" name="HIVE_TESTCLUSTER_CONNECTION_HivePrincipal" prompt="HIVE_TESTCLUSTER_CONNECTION_HivePrincipal?" promptNeeded="false" type="id_String" value="hive/_HOST@OFFICE.CORP.INDOSAT.COM"/>
+    <contextParameter xmi:id="_s_0n3_IuEei04LlwpOmL_w" comment="" name="HIVE_TESTCLUSTER_CONNECTION_hiveAdditionalJDBCParameters" prompt="HIVE_TESTCLUSTER_CONNECTION_hiveAdditionalJDBCParameters?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_s_0n4PIuEei04LlwpOmL_w" comment="" name="HIVE_TESTCLUSTER_CONNECTION_Server" prompt="HIVE_TESTCLUSTER_CONNECTION_Server?" promptNeeded="false" type="id_String" value="hdd1-tms0001.office.corp.indosat.com"/>
+    <contextParameter xmi:id="_s_0n4fIuEei04LlwpOmL_w" comment="" name="HIVE_TESTCLUSTER_CONNECTION_HiveKeyTabPrincipal" prompt="HIVE_TESTCLUSTER_CONNECTION_HiveKeyTabPrincipal?" promptNeeded="false" type="id_String" value="apps_dev@OFFICE.CORP.INDOSAT.COM"/>
+    <contextParameter xmi:id="_s_0n4vIuEei04LlwpOmL_w" comment="" name="HIVE_TESTCLUSTER_CONNECTION_Login" prompt="HIVE_TESTCLUSTER_CONNECTION_Login?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_s_0n4_IuEei04LlwpOmL_w" comment="" name="HIVE_TESTCLUSTER_CONNECTION_Port" prompt="HIVE_TESTCLUSTER_CONNECTION_Port?" promptNeeded="false" type="id_String" value="10000"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_s_0n5PIuEei04LlwpOmL_w" confirmationNeeded="false" name="PRD">
+    <contextParameter xmi:id="_s_0n5fIuEei04LlwpOmL_w" comment="" name="HIVE_TESTCLUSTER_CONNECTION_Database" prompt="HIVE_TESTCLUSTER_CONNECTION_Database?" promptNeeded="false" type="id_String" value="default"/>
+    <contextParameter xmi:id="_s_0n5vIuEei04LlwpOmL_w" comment="" name="HIVE_TESTCLUSTER_CONNECTION_HiveKeyTab" prompt="HIVE_TESTCLUSTER_CONNECTION_HiveKeyTab?" promptNeeded="false" type="id_String" value="/home/hdp-rev/hdp-rev.keytab"/>
+    <contextParameter xmi:id="_s_0n5_IuEei04LlwpOmL_w" comment="" name="HIVE_TESTCLUSTER_CONNECTION_Password" prompt="HIVE_TESTCLUSTER_CONNECTION_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_s_0n6PIuEei04LlwpOmL_w" comment="" name="HIVE_TESTCLUSTER_CONNECTION_HivePrincipal" prompt="HIVE_TESTCLUSTER_CONNECTION_HivePrincipal?" promptNeeded="false" type="id_String" value="hive/_HOST@OFFICE.CORP.INDOSAT.COM"/>
+    <contextParameter xmi:id="_s_0n6fIuEei04LlwpOmL_w" comment="" name="HIVE_TESTCLUSTER_CONNECTION_hiveAdditionalJDBCParameters" prompt="HIVE_TESTCLUSTER_CONNECTION_hiveAdditionalJDBCParameters?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_s_0n6vIuEei04LlwpOmL_w" comment="" name="HIVE_TESTCLUSTER_CONNECTION_Server" prompt="HIVE_TESTCLUSTER_CONNECTION_Server?" promptNeeded="false" type="id_String" value="hdp1-dms0002.office.corp.indosat.com"/>
+    <contextParameter xmi:id="_s_0n6_IuEei04LlwpOmL_w" comment="" name="HIVE_TESTCLUSTER_CONNECTION_HiveKeyTabPrincipal" prompt="HIVE_TESTCLUSTER_CONNECTION_HiveKeyTabPrincipal?" promptNeeded="false" type="id_String" value="hdp-rev@OFFICE.CORP.INDOSAT.COM"/>
+    <contextParameter xmi:id="_s_0n7PIuEei04LlwpOmL_w" comment="" name="HIVE_TESTCLUSTER_CONNECTION_Login" prompt="HIVE_TESTCLUSTER_CONNECTION_Login?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_s_0n7fIuEei04LlwpOmL_w" comment="" name="HIVE_TESTCLUSTER_CONNECTION_Port" prompt="HIVE_TESTCLUSTER_CONNECTION_Port?" promptNeeded="false" type="id_String" value="10000"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_s_0n7vIuEei04LlwpOmL_w" confirmationNeeded="false" name="UAT">
+    <contextParameter xmi:id="_s_0n7_IuEei04LlwpOmL_w" comment="" name="HIVE_TESTCLUSTER_CONNECTION_Database" prompt="HIVE_TESTCLUSTER_CONNECTION_Database?" promptNeeded="false" type="id_String" value="default"/>
+    <contextParameter xmi:id="_s_0n8PIuEei04LlwpOmL_w" comment="" name="HIVE_TESTCLUSTER_CONNECTION_HiveKeyTab" prompt="HIVE_TESTCLUSTER_CONNECTION_HiveKeyTab?" promptNeeded="false" type="id_String" value="/home/hdp-rev/hdp-rev.keytab"/>
+    <contextParameter xmi:id="_s_0n8fIuEei04LlwpOmL_w" comment="" name="HIVE_TESTCLUSTER_CONNECTION_Password" prompt="HIVE_TESTCLUSTER_CONNECTION_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_s_0n8vIuEei04LlwpOmL_w" comment="" name="HIVE_TESTCLUSTER_CONNECTION_HivePrincipal" prompt="HIVE_TESTCLUSTER_CONNECTION_HivePrincipal?" promptNeeded="false" type="id_String" value="hive/_HOST@OFFICE.CORP.INDOSAT.COM"/>
+    <contextParameter xmi:id="_s_0n8_IuEei04LlwpOmL_w" comment="" name="HIVE_TESTCLUSTER_CONNECTION_hiveAdditionalJDBCParameters" prompt="HIVE_TESTCLUSTER_CONNECTION_hiveAdditionalJDBCParameters?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_s_0n9PIuEei04LlwpOmL_w" comment="" name="HIVE_TESTCLUSTER_CONNECTION_Server" prompt="HIVE_TESTCLUSTER_CONNECTION_Server?" promptNeeded="false" type="id_String" value="hdd1-tms0001.office.corp.indosat.com"/>
+    <contextParameter xmi:id="_s_0n9fIuEei04LlwpOmL_w" comment="" name="HIVE_TESTCLUSTER_CONNECTION_HiveKeyTabPrincipal" prompt="HIVE_TESTCLUSTER_CONNECTION_HiveKeyTabPrincipal?" promptNeeded="false" type="id_String" value="hdp-rev@OFFICE.CORP.INDOSAT.COM"/>
+    <contextParameter xmi:id="_s_0n9vIuEei04LlwpOmL_w" comment="" name="HIVE_TESTCLUSTER_CONNECTION_Login" prompt="HIVE_TESTCLUSTER_CONNECTION_Login?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_s_0n9_IuEei04LlwpOmL_w" comment="" name="HIVE_TESTCLUSTER_CONNECTION_Port" prompt="HIVE_TESTCLUSTER_CONNECTION_Port?" promptNeeded="false" type="id_String" value="10000"/>
+  </talendfile:ContextType>
+</xmi:XMI>

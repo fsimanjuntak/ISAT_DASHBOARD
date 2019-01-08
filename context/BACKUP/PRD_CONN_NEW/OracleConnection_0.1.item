@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_tDQWUPIuEei04LlwpOmL_w" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_tDQWUfIuEei04LlwpOmL_w" comment="" name="HDPDEV1_Sid" prompt="HDPDEV1_Sid?" promptNeeded="false" type="id_String" value="HADOOP1"/>
+  <contextParameter xmi:id="_tDQWUvIuEei04LlwpOmL_w" comment="" name="HDPDEV1_Login" prompt="HDPDEV1_Login?" promptNeeded="false" type="id_String" value="IBM_OMT"/>
+  <contextParameter xmi:id="_tDQWU_IuEei04LlwpOmL_w" comment="" name="HDPDEV1_Schema" prompt="HDPDEV1_Schema?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_tDQWVPIuEei04LlwpOmL_w" comment="" name="HDPDEV1_Password" prompt="HDPDEV1_Password?" promptNeeded="false" type="id_Password" value="dLuX3chuamwixDucQmWv7A=="/>
+  <contextParameter xmi:id="_tDQWVfIuEei04LlwpOmL_w" comment="" name="HDPDEV1_Port" prompt="HDPDEV1_Port?" promptNeeded="false" type="id_String" value="1521"/>
+  <contextParameter xmi:id="_tDQWVvIuEei04LlwpOmL_w" comment="" name="HDPDEV1_AdditionalParams" prompt="HDPDEV1_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_tDQWV_IuEei04LlwpOmL_w" comment="" name="HDPDEV1_Server" prompt="HDPDEV1_Server?" promptNeeded="false" type="id_String" value="hadoopdb-scan.office.corp.indosat.com"/>
+</talendfile:ContextType>

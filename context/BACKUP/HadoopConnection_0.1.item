@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_s-yGAPIuEei04LlwpOmL_w" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_s-yGAfIuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_JobHistory" prompt="TEST_CLUSTER_CONNECTION_JobHistory?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:10020"/>
+    <contextParameter xmi:id="_s-yGAvIuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_NameNodeUri" prompt="TEST_CLUSTER_CONNECTION_NameNodeUri?" promptNeeded="false" type="id_String" value="hdfs://nameservice1"/>
+    <contextParameter xmi:id="_s-yGA_IuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_ResourceManager" prompt="TEST_CLUSTER_CONNECTION_ResourceManager?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:8032"/>
+    <contextParameter xmi:id="_s-yGBPIuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_JTOrRMPrin" prompt="TEST_CLUSTER_CONNECTION_JTOrRMPrin?" promptNeeded="false" type="id_String" value="yarn/_HOST@OFFICE.CORP.INDOSAT.COM"/>
+    <contextParameter xmi:id="_s-yGBfIuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_JobHistroyPrin" prompt="TEST_CLUSTER_CONNECTION_JobHistroyPrin?" promptNeeded="false" type="id_String" value="mapred/${yarn.resourcemanager.hostname}"/>
+    <contextParameter xmi:id="_s-yGBvIuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_ResourceManagerScheduler" prompt="TEST_CLUSTER_CONNECTION_ResourceManagerScheduler?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:8030"/>
+    <contextParameter xmi:id="_s-yGB_IuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_KeyTab" prompt="TEST_CLUSTER_CONNECTION_KeyTab?" promptNeeded="false" type="id_String" value="/home/hdp-rev/hdp-rev.keytab"/>
+    <contextParameter xmi:id="_s-yGCPIuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_NameNodePrin" prompt="TEST_CLUSTER_CONNECTION_NameNodePrin?" promptNeeded="false" type="id_String" value="hdfs://nameservice1"/>
+    <contextParameter xmi:id="_s-yGCfIuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_StagingDirectory" prompt="TEST_CLUSTER_CONNECTION_StagingDirectory?" promptNeeded="false" type="id_String" value="/user"/>
+    <contextParameter xmi:id="_s-yGCvIuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_Principal" prompt="TEST_CLUSTER_CONNECTION_Principal?" promptNeeded="false" type="id_String" value="hdp-rev@OFFICE.CORP.INDOSAT.COM"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_s-yGC_IuEei04LlwpOmL_w" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_s-yGDPIuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_JobHistory" prompt="TEST_CLUSTER_CONNECTION_JobHistory?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:10020"/>
+    <contextParameter xmi:id="_s-yGDfIuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_NameNodeUri" prompt="TEST_CLUSTER_CONNECTION_NameNodeUri?" promptNeeded="false" type="id_String" value="hdfs://testnameservice1"/>
+    <contextParameter xmi:id="_s-yGDvIuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_ResourceManager" prompt="TEST_CLUSTER_CONNECTION_ResourceManager?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:8032"/>
+    <contextParameter xmi:id="_s-yGD_IuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_JTOrRMPrin" prompt="TEST_CLUSTER_CONNECTION_JTOrRMPrin?" promptNeeded="false" type="id_String" value="yarn/_HOST@OFFICE.CORP.INDOSAT.COM"/>
+    <contextParameter xmi:id="_s-yGEPIuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_JobHistroyPrin" prompt="TEST_CLUSTER_CONNECTION_JobHistroyPrin?" promptNeeded="false" type="id_String" value="mapred/${yarn.resourcemanager.hostname}"/>
+    <contextParameter xmi:id="_s-yGEfIuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_ResourceManagerScheduler" prompt="TEST_CLUSTER_CONNECTION_ResourceManagerScheduler?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:8030"/>
+    <contextParameter xmi:id="_s-yGEvIuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_KeyTab" prompt="TEST_CLUSTER_CONNECTION_KeyTab?" promptNeeded="false" type="id_String" value="/home/apps_dev/apps_dev.keytab"/>
+    <contextParameter xmi:id="_s-yGE_IuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_NameNodePrin" prompt="TEST_CLUSTER_CONNECTION_NameNodePrin?" promptNeeded="false" type="id_String" value="hdfs://testnameservice1"/>
+    <contextParameter xmi:id="_s-yGFPIuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_StagingDirectory" prompt="TEST_CLUSTER_CONNECTION_StagingDirectory?" promptNeeded="false" type="id_String" value="/user"/>
+    <contextParameter xmi:id="_s-yGFfIuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_Principal" prompt="TEST_CLUSTER_CONNECTION_Principal?" promptNeeded="false" type="id_String" value="apps_dev@OFFICE.CORP.INDOSAT.COM"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_s-yGFvIuEei04LlwpOmL_w" confirmationNeeded="false" name="PRD">
+    <contextParameter xmi:id="_s-yGF_IuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_JobHistory" prompt="TEST_CLUSTER_CONNECTION_JobHistory?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:10020"/>
+    <contextParameter xmi:id="_s-yGGPIuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_NameNodeUri" prompt="TEST_CLUSTER_CONNECTION_NameNodeUri?" promptNeeded="false" type="id_String" value="hdfs://nameservice1"/>
+    <contextParameter xmi:id="_s-yGGfIuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_ResourceManager" prompt="TEST_CLUSTER_CONNECTION_ResourceManager?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:8032"/>
+    <contextParameter xmi:id="_s-yGGvIuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_JTOrRMPrin" prompt="TEST_CLUSTER_CONNECTION_JTOrRMPrin?" promptNeeded="false" type="id_String" value="yarn/_HOST@OFFICE.CORP.INDOSAT.COM"/>
+    <contextParameter xmi:id="_s-yGG_IuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_JobHistroyPrin" prompt="TEST_CLUSTER_CONNECTION_JobHistroyPrin?" promptNeeded="false" type="id_String" value="mapred/${yarn.resourcemanager.hostname}"/>
+    <contextParameter xmi:id="_s-yGHPIuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_ResourceManagerScheduler" prompt="TEST_CLUSTER_CONNECTION_ResourceManagerScheduler?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:8030"/>
+    <contextParameter xmi:id="_s-yGHfIuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_KeyTab" prompt="TEST_CLUSTER_CONNECTION_KeyTab?" promptNeeded="false" type="id_String" value="/home/hdp-rev/hdp-rev.keytab"/>
+    <contextParameter xmi:id="_s-yGHvIuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_NameNodePrin" prompt="TEST_CLUSTER_CONNECTION_NameNodePrin?" promptNeeded="false" type="id_String" value="hdfs://nameservice1"/>
+    <contextParameter xmi:id="_s-yGH_IuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_StagingDirectory" prompt="TEST_CLUSTER_CONNECTION_StagingDirectory?" promptNeeded="false" type="id_String" value="/user"/>
+    <contextParameter xmi:id="_s-yGIPIuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_Principal" prompt="TEST_CLUSTER_CONNECTION_Principal?" promptNeeded="false" type="id_String" value="hdp-rev@OFFICE.CORP.INDOSAT.COM"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_s-yGIfIuEei04LlwpOmL_w" confirmationNeeded="false" name="UAT">
+    <contextParameter xmi:id="_s-yGIvIuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_JobHistory" prompt="TEST_CLUSTER_CONNECTION_JobHistory?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:10020"/>
+    <contextParameter xmi:id="_s-yGI_IuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_NameNodeUri" prompt="TEST_CLUSTER_CONNECTION_NameNodeUri?" promptNeeded="false" type="id_String" value="hdfs://nameservice1"/>
+    <contextParameter xmi:id="_s-yGJPIuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_ResourceManager" prompt="TEST_CLUSTER_CONNECTION_ResourceManager?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:8032"/>
+    <contextParameter xmi:id="_s-yGJfIuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_JTOrRMPrin" prompt="TEST_CLUSTER_CONNECTION_JTOrRMPrin?" promptNeeded="false" type="id_String" value="yarn/_HOST@OFFICE.CORP.INDOSAT.COM"/>
+    <contextParameter xmi:id="_s-yGJvIuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_JobHistroyPrin" prompt="TEST_CLUSTER_CONNECTION_JobHistroyPrin?" promptNeeded="false" type="id_String" value="mapred/${yarn.resourcemanager.hostname}"/>
+    <contextParameter xmi:id="_s-yGJ_IuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_ResourceManagerScheduler" prompt="TEST_CLUSTER_CONNECTION_ResourceManagerScheduler?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:8030"/>
+    <contextParameter xmi:id="_s-yGKPIuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_KeyTab" prompt="TEST_CLUSTER_CONNECTION_KeyTab?" promptNeeded="false" type="id_String" value="/home/hdp-rev/hdp-rev.keytab"/>
+    <contextParameter xmi:id="_s-yGKfIuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_NameNodePrin" prompt="TEST_CLUSTER_CONNECTION_NameNodePrin?" promptNeeded="false" type="id_String" value="hdfs://nameservice1"/>
+    <contextParameter xmi:id="_s-yGKvIuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_StagingDirectory" prompt="TEST_CLUSTER_CONNECTION_StagingDirectory?" promptNeeded="false" type="id_String" value="/user"/>
+    <contextParameter xmi:id="_s-yGK_IuEei04LlwpOmL_w" comment="" name="TEST_CLUSTER_CONNECTION_Principal" prompt="TEST_CLUSTER_CONNECTION_Principal?" promptNeeded="false" type="id_String" value="hdp-rev@OFFICE.CORP.INDOSAT.COM"/>
+  </talendfile:ContextType>
+</xmi:XMI>

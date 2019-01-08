@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_s-VaEfIuEei04LlwpOmL_w" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_s-VaEvIuEei04LlwpOmL_w" comment="" name="HDP_CONNECTION_ResourceManager" prompt="HDP_CONNECTION_ResourceManager?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:8032"/>
+  <contextParameter xmi:id="_s-VaE_IuEei04LlwpOmL_w" comment="" name="HDP_CONNECTION_JobHistory" prompt="HDP_CONNECTION_JobHistory?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:10020"/>
+  <contextParameter xmi:id="_s-VaFPIuEei04LlwpOmL_w" comment="" name="HDP_CONNECTION_StagingDirectory" prompt="HDP_CONNECTION_StagingDirectory?" promptNeeded="false" type="id_String" value="/user"/>
+  <contextParameter xmi:id="_s-VaFfIuEei04LlwpOmL_w" comment="" name="HDP_CONNECTION_KeyTab" prompt="HDP_CONNECTION_KeyTab?" promptNeeded="false" type="id_String" value="/home/apps_dev/apps_dev.keytab"/>
+  <contextParameter xmi:id="_s-VaFvIuEei04LlwpOmL_w" comment="" name="HDP_CONNECTION_ResourceManagerScheduler" prompt="HDP_CONNECTION_ResourceManagerScheduler?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:8030"/>
+  <contextParameter xmi:id="_s-VaF_IuEei04LlwpOmL_w" comment="" name="HDP_CONNECTION_Principal" prompt="HDP_CONNECTION_Principal?" promptNeeded="false" type="id_String" value="apps_dev@OFFICE.CORP.INDOSAT.COM"/>
+  <contextParameter xmi:id="_s-VaGPIuEei04LlwpOmL_w" comment="" name="HDP_CONNECTION_NameNodeUri" prompt="HDP_CONNECTION_NameNodeUri?" promptNeeded="false" type="id_String" value="hdfs://testnameservice1"/>
+  <contextParameter xmi:id="_s-VaGfIuEei04LlwpOmL_w" comment="" name="HDP_CONNECTION_JTOrRMPrin" prompt="HDP_CONNECTION_JTOrRMPrin?" promptNeeded="false" type="id_String" value="yarn/_HOST@OFFICE.CORP.INDOSAT.COM"/>
+  <contextParameter xmi:id="_s-VaGvIuEei04LlwpOmL_w" comment="" name="HDP_CONNECTION_NameNodePrin" prompt="HDP_CONNECTION_NameNodePrin?" promptNeeded="false" type="id_String" value="hdfs://testnameservice1"/>
+  <contextParameter xmi:id="_s-VaG_IuEei04LlwpOmL_w" comment="" name="HDP_CONNECTION_JobHistroyPrin" prompt="HDP_CONNECTION_JobHistroyPrin?" promptNeeded="false" type="id_String" value="mapred/${yarn.resourcemanager.hostname}"/>
+</talendfile:ContextType>

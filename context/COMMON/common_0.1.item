@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_tEmaIPIuEei04LlwpOmL_w" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_tEmaIfIuEei04LlwpOmL_w" comment="" name="username" prompt="username?" promptNeeded="false" type="id_String" value="&quot;apps_dev&quot;"/>
+    <contextParameter xmi:id="_tEmaIvIuEei04LlwpOmL_w" comment="" name="password" prompt="password?" promptNeeded="false" type="id_Password" value="M7pUWbM5Nhq9FGvT2kbe/Q=="/>
+    <contextParameter xmi:id="_tEmaI_IuEei04LlwpOmL_w" comment="" name="ip_address" prompt="ip_address?" promptNeeded="false" type="id_String" value="&quot;10.34.69.113&quot;"/>
+    <contextParameter xmi:id="_tEmaJPIuEei04LlwpOmL_w" comment="" name="port" prompt="port?" promptNeeded="false" type="id_String" value="&quot;22&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_tEmaJfIuEei04LlwpOmL_w" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_tEmaJvIuEei04LlwpOmL_w" comment="" name="username" prompt="username?" promptNeeded="false" type="id_String" value="&quot;apps_dev&quot;"/>
+    <contextParameter xmi:id="_tEmaJ_IuEei04LlwpOmL_w" comment="" name="password" prompt="password?" promptNeeded="false" type="id_Password" value="M7pUWbM5Nhq9FGvT2kbe/Q=="/>
+    <contextParameter xmi:id="_tEmaKPIuEei04LlwpOmL_w" comment="" name="ip_address" prompt="ip_address?" promptNeeded="false" type="id_String" value="&quot;10.34.69.113&quot;"/>
+    <contextParameter xmi:id="_tEmaKfIuEei04LlwpOmL_w" comment="" name="port" prompt="port?" promptNeeded="false" type="id_String" value="&quot;22&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_tEmaKvIuEei04LlwpOmL_w" confirmationNeeded="false" name="PRD">
+    <contextParameter xmi:id="_tEmaK_IuEei04LlwpOmL_w" comment="" name="username" prompt="username?" promptNeeded="false" type="id_String" value="&quot;hdp-rev&quot;"/>
+    <contextParameter xmi:id="_tEmaLPIuEei04LlwpOmL_w" comment="" name="password" prompt="password?" promptNeeded="false" type="id_Password" value="KCN1EtPQl/mzuWRV7I5CnQ=="/>
+    <contextParameter xmi:id="_tEmaLfIuEei04LlwpOmL_w" comment="" name="ip_address" prompt="ip_address?" promptNeeded="false" type="id_String" value="&quot;10.34.64.83&quot;"/>
+    <contextParameter xmi:id="_tEmaLvIuEei04LlwpOmL_w" comment="" name="port" prompt="port?" promptNeeded="false" type="id_String" value="&quot;22&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_tEmaL_IuEei04LlwpOmL_w" confirmationNeeded="false" name="UAT">
+    <contextParameter xmi:id="_tEmaMPIuEei04LlwpOmL_w" comment="" name="username" prompt="username?" promptNeeded="false" type="id_String" value="&quot;apps_dev&quot;"/>
+    <contextParameter xmi:id="_tEmaMfIuEei04LlwpOmL_w" comment="" name="password" prompt="password?" promptNeeded="false" type="id_Password" value="M7pUWbM5Nhq9FGvT2kbe/Q=="/>
+    <contextParameter xmi:id="_tEmaMvIuEei04LlwpOmL_w" comment="" name="ip_address" prompt="ip_address?" promptNeeded="false" type="id_String" value="&quot;10.34.69.113&quot;"/>
+    <contextParameter xmi:id="_tEmaM_IuEei04LlwpOmL_w" comment="" name="port" prompt="port?" promptNeeded="false" type="id_String" value="&quot;22&quot;"/>
+  </talendfile:ContextType>
+</xmi:XMI>

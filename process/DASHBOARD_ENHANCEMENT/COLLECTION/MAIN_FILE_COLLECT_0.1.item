@@ -1,0 +1,991 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="DEV" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="prc_dt" prompt="prc_dt?" promptNeeded="false" type="id_String" value="&quot;20181004&quot;"/>
+    <contextParameter comment="" name="prc_tp" prompt="prc_tp?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="coll_job_id" prompt="coll_job_id?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="job_id" prompt="job_id?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="output_dir" prompt="output_dir?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="output_filename" prompt="output_filename?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="main_dir" prompt="main_dir?" promptNeeded="false" type="id_String" value="&quot;/home/apps_dev/collection/sgsn_huawei/&quot;"/>
+    <contextParameter comment="" name="logged_dir" prompt="logged_dir?" promptNeeded="false" type="id_String" value="&quot;/home/apps_dev/collection/sgsn_huawei/logged&quot;"/>
+    <contextParameter comment="" name="backup_dir" prompt="backup_dir?" promptNeeded="false" type="id_String" value="&quot;/home/apps_dev/collection/sgsn_huawei/backup&quot;"/>
+    <contextParameter comment="" name="list_files" prompt="list_files?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="filemask" prompt="filemask?" promptNeeded="false" type="id_String" value="&quot;*gz&quot;"/>
+    <contextParameter comment="" name="nb_dupl" prompt="nb_dupl?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="min_files" prompt="min_files?" promptNeeded="false" type="id_Integer" value="100"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_JobHistory" prompt="TEST_CLUSTER_CONNECTION_JobHistory?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:10020"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_JobHistroyPrin" prompt="TEST_CLUSTER_CONNECTION_JobHistroyPrin?" promptNeeded="false" type="id_String" value="mapred/${yarn.resourcemanager.hostname}"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_JTOrRMPrin" prompt="TEST_CLUSTER_CONNECTION_JTOrRMPrin?" promptNeeded="false" type="id_String" value="yarn/_HOST@OFFICE.CORP.INDOSAT.COM"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_KeyTab" prompt="TEST_CLUSTER_CONNECTION_KeyTab?" promptNeeded="false" type="id_String" value="/home/hdp-rev/hdp-rev.keytab"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_NameNodePrin" prompt="TEST_CLUSTER_CONNECTION_NameNodePrin?" promptNeeded="false" type="id_String" value="hdfs://nameservice1"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_NameNodeUri" prompt="TEST_CLUSTER_CONNECTION_NameNodeUri?" promptNeeded="false" type="id_String" value="hdfs://nameservice1"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_Principal" prompt="TEST_CLUSTER_CONNECTION_Principal?" promptNeeded="false" type="id_String" value="hdp-rev@OFFICE.CORP.INDOSAT.COM"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_ResourceManager" prompt="TEST_CLUSTER_CONNECTION_ResourceManager?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:8032"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_ResourceManagerScheduler" prompt="TEST_CLUSTER_CONNECTION_ResourceManagerScheduler?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:8030"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_StagingDirectory" prompt="TEST_CLUSTER_CONNECTION_StagingDirectory?" promptNeeded="false" type="id_String" value="/user"/>
+    <contextParameter comment="" name="HDPDEV_AdditionalParams" prompt="HDPDEV_AdditionalParams?" promptNeeded="false" repositoryContextId="_iKy_EKW7EeiIEd-8Phhh6A" type="id_String" value=""/>
+    <contextParameter comment="" name="HDPDEV_Login" prompt="HDPDEV_Login?" promptNeeded="false" repositoryContextId="_iKy_EKW7EeiIEd-8Phhh6A" type="id_String" value="hdpdev"/>
+    <contextParameter comment="" name="HDPDEV_Password" prompt="HDPDEV_Password?" promptNeeded="false" repositoryContextId="_iKy_EKW7EeiIEd-8Phhh6A" type="id_Password" value="vaerjeI9KWk="/>
+    <contextParameter comment="" name="HDPDEV_Port" prompt="HDPDEV_Port?" promptNeeded="false" repositoryContextId="_iKy_EKW7EeiIEd-8Phhh6A" type="id_String" value="1521"/>
+    <contextParameter comment="" name="HDPDEV_Schema" prompt="HDPDEV_Schema?" promptNeeded="false" repositoryContextId="_iKy_EKW7EeiIEd-8Phhh6A" type="id_String" value="HDPDEV"/>
+    <contextParameter comment="" name="HDPDEV_Server" prompt="HDPDEV_Server?" promptNeeded="false" repositoryContextId="_iKy_EKW7EeiIEd-8Phhh6A" type="id_String" value="10.128.57.76"/>
+    <contextParameter comment="" name="HDPDEV_ServiceName" prompt="HDPDEV_ServiceName?" promptNeeded="false" repositoryContextId="_iKy_EKW7EeiIEd-8Phhh6A" type="id_String" value="exadev"/>
+  </context>
+  <context confirmationNeeded="false" name="DEV">
+    <contextParameter comment="" name="prc_dt" prompt="prc_dt?" promptNeeded="false" type="id_String" value="&quot;20181022&quot;"/>
+    <contextParameter comment="" name="prc_tp" prompt="prc_tp?" promptNeeded="false" type="id_String" value="&quot;SMSC_TANGO&quot;"/>
+    <contextParameter comment="" name="coll_job_id" prompt="coll_job_id?" promptNeeded="false" type="id_String" value="&quot;20181022112801&quot;"/>
+    <contextParameter comment="" name="job_id" prompt="job_id?" promptNeeded="false" type="id_String" value="&quot;20181022112801&quot;"/>
+    <contextParameter comment="" name="output_dir" prompt="output_dir?" promptNeeded="false" type="id_String" value="&quot;/user/apps_dev/test&quot;"/>
+    <contextParameter comment="" name="output_filename" prompt="output_filename?" promptNeeded="false" type="id_String" value="&quot;20181022.seq&quot;"/>
+    <contextParameter comment="" name="main_dir" prompt="main_dir?" promptNeeded="false" type="id_String" value="&quot;/apps/data1/source/sample/performance_dashboard/pd_dashboard/tango/source&quot;"/>
+    <contextParameter comment="" name="logged_dir" prompt="logged_dir?" promptNeeded="false" type="id_String" value="&quot;/apps/data1/source/sample/performance_dashboard/pd_dashboard/tango/logged&quot;"/>
+    <contextParameter comment="" name="backup_dir" prompt="backup_dir?" promptNeeded="false" type="id_String" value="&quot;/apps/data1/source/sample/performance_dashboard/pd_dashboard/tango/backup&quot;"/>
+    <contextParameter comment="" name="list_files" prompt="list_files?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="filemask" prompt="filemask?" promptNeeded="false" type="id_String" value="&quot;*txt&quot;"/>
+    <contextParameter comment="" name="nb_dupl" prompt="nb_dupl?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="min_files" prompt="min_files?" promptNeeded="false" type="id_Integer" value="3"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_JobHistory" prompt="TEST_CLUSTER_CONNECTION_JobHistory?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:10020"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_JobHistroyPrin" prompt="TEST_CLUSTER_CONNECTION_JobHistroyPrin?" promptNeeded="false" type="id_String" value="mapred/${yarn.resourcemanager.hostname}"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_JTOrRMPrin" prompt="TEST_CLUSTER_CONNECTION_JTOrRMPrin?" promptNeeded="false" type="id_String" value="yarn/_HOST@OFFICE.CORP.INDOSAT.COM"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_KeyTab" prompt="TEST_CLUSTER_CONNECTION_KeyTab?" promptNeeded="false" type="id_String" value="/home/apps_dev/apps_dev.keytab"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_NameNodePrin" prompt="TEST_CLUSTER_CONNECTION_NameNodePrin?" promptNeeded="false" type="id_String" value="hdfs://testnameservice1"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_NameNodeUri" prompt="TEST_CLUSTER_CONNECTION_NameNodeUri?" promptNeeded="false" type="id_String" value="hdfs://testnameservice1"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_Principal" prompt="TEST_CLUSTER_CONNECTION_Principal?" promptNeeded="false" type="id_String" value="apps_dev@OFFICE.CORP.INDOSAT.COM"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_ResourceManager" prompt="TEST_CLUSTER_CONNECTION_ResourceManager?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:8032"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_ResourceManagerScheduler" prompt="TEST_CLUSTER_CONNECTION_ResourceManagerScheduler?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:8030"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_StagingDirectory" prompt="TEST_CLUSTER_CONNECTION_StagingDirectory?" promptNeeded="false" type="id_String" value="/user"/>
+    <contextParameter comment="" name="HDPDEV_AdditionalParams" prompt="HDPDEV_AdditionalParams?" promptNeeded="false" repositoryContextId="_iKy_EKW7EeiIEd-8Phhh6A" type="id_String" value=""/>
+    <contextParameter comment="" name="HDPDEV_Login" prompt="HDPDEV_Login?" promptNeeded="false" repositoryContextId="_iKy_EKW7EeiIEd-8Phhh6A" type="id_String" value="hdpdev"/>
+    <contextParameter comment="" name="HDPDEV_Password" prompt="HDPDEV_Password?" promptNeeded="false" repositoryContextId="_iKy_EKW7EeiIEd-8Phhh6A" type="id_Password" value="vaerjeI9KWk="/>
+    <contextParameter comment="" name="HDPDEV_Port" prompt="HDPDEV_Port?" promptNeeded="false" repositoryContextId="_iKy_EKW7EeiIEd-8Phhh6A" type="id_String" value="1521"/>
+    <contextParameter comment="" name="HDPDEV_Schema" prompt="HDPDEV_Schema?" promptNeeded="false" repositoryContextId="_iKy_EKW7EeiIEd-8Phhh6A" type="id_String" value="HDPDEV"/>
+    <contextParameter comment="" name="HDPDEV_Server" prompt="HDPDEV_Server?" promptNeeded="false" repositoryContextId="_iKy_EKW7EeiIEd-8Phhh6A" type="id_String" value="10.128.57.76"/>
+    <contextParameter comment="" name="HDPDEV_ServiceName" prompt="HDPDEV_ServiceName?" promptNeeded="false" repositoryContextId="_iKy_EKW7EeiIEd-8Phhh6A" type="id_String" value="exadev"/>
+  </context>
+  <context confirmationNeeded="false" name="PRD">
+    <contextParameter comment="" name="prc_dt" prompt="prc_dt?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="prc_tp" prompt="prc_tp?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="coll_job_id" prompt="coll_job_id?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="job_id" prompt="job_id?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="output_dir" prompt="output_dir?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="output_filename" prompt="output_filename?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="main_dir" prompt="main_dir?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="logged_dir" prompt="logged_dir?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="backup_dir" prompt="backup_dir?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="list_files" prompt="list_files?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="filemask" prompt="filemask?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="nb_dupl" prompt="nb_dupl?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="min_files" prompt="min_files?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_JobHistory" prompt="TEST_CLUSTER_CONNECTION_JobHistory?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:10020"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_JobHistroyPrin" prompt="TEST_CLUSTER_CONNECTION_JobHistroyPrin?" promptNeeded="false" type="id_String" value="mapred/${yarn.resourcemanager.hostname}"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_JTOrRMPrin" prompt="TEST_CLUSTER_CONNECTION_JTOrRMPrin?" promptNeeded="false" type="id_String" value="yarn/_HOST@OFFICE.CORP.INDOSAT.COM"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_KeyTab" prompt="TEST_CLUSTER_CONNECTION_KeyTab?" promptNeeded="false" type="id_String" value="/home/hdp-rev/hdp-rev.keytab"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_NameNodePrin" prompt="TEST_CLUSTER_CONNECTION_NameNodePrin?" promptNeeded="false" type="id_String" value="hdfs://hdp1-dms0001.office.corp.indosat.com"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_NameNodeUri" prompt="TEST_CLUSTER_CONNECTION_NameNodeUri?" promptNeeded="false" type="id_String" value="hdfs://hdp1-dms0001.office.corp.indosat.com"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_Principal" prompt="TEST_CLUSTER_CONNECTION_Principal?" promptNeeded="false" type="id_String" value="hdp-rev@OFFICE.CORP.INDOSAT.COM"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_ResourceManager" prompt="TEST_CLUSTER_CONNECTION_ResourceManager?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:8032"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_ResourceManagerScheduler" prompt="TEST_CLUSTER_CONNECTION_ResourceManagerScheduler?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:8030"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_StagingDirectory" prompt="TEST_CLUSTER_CONNECTION_StagingDirectory?" promptNeeded="false" type="id_String" value="/user"/>
+    <contextParameter comment="" name="HDPDEV_AdditionalParams" prompt="HDPDEV_AdditionalParams?" promptNeeded="false" repositoryContextId="_iKy_EKW7EeiIEd-8Phhh6A" type="id_String" value=""/>
+    <contextParameter comment="" name="HDPDEV_Login" prompt="HDPDEV_Login?" promptNeeded="false" repositoryContextId="_iKy_EKW7EeiIEd-8Phhh6A" type="id_String" value="hdp_jobcontrol"/>
+    <contextParameter comment="" name="HDPDEV_Password" prompt="HDPDEV_Password?" promptNeeded="false" repositoryContextId="_iKy_EKW7EeiIEd-8Phhh6A" type="id_Password" value="HCJ/x1iJwgCyRkF+rm/O4A=="/>
+    <contextParameter comment="" name="HDPDEV_Port" prompt="HDPDEV_Port?" promptNeeded="false" repositoryContextId="_iKy_EKW7EeiIEd-8Phhh6A" type="id_String" value="1525"/>
+    <contextParameter comment="" name="HDPDEV_Schema" prompt="HDPDEV_Schema?" promptNeeded="false" repositoryContextId="_iKy_EKW7EeiIEd-8Phhh6A" type="id_String" value=""/>
+    <contextParameter comment="" name="HDPDEV_Server" prompt="HDPDEV_Server?" promptNeeded="false" repositoryContextId="_iKy_EKW7EeiIEd-8Phhh6A" type="id_String" value="omtngsspscan01"/>
+    <contextParameter comment="" name="HDPDEV_ServiceName" prompt="HDPDEV_ServiceName?" promptNeeded="false" repositoryContextId="_iKy_EKW7EeiIEd-8Phhh6A" type="id_String" value="OPOMT"/>
+  </context>
+  <context confirmationNeeded="false" name="UAT">
+    <contextParameter comment="" name="prc_dt" prompt="prc_dt?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="prc_tp" prompt="prc_tp?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="coll_job_id" prompt="coll_job_id?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="job_id" prompt="job_id?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="output_dir" prompt="output_dir?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="output_filename" prompt="output_filename?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="main_dir" prompt="main_dir?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="logged_dir" prompt="logged_dir?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="backup_dir" prompt="backup_dir?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="list_files" prompt="list_files?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="filemask" prompt="filemask?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="nb_dupl" prompt="nb_dupl?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="min_files" prompt="min_files?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_JobHistory" prompt="TEST_CLUSTER_CONNECTION_JobHistory?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:10020"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_JobHistroyPrin" prompt="TEST_CLUSTER_CONNECTION_JobHistroyPrin?" promptNeeded="false" type="id_String" value="mapred/${yarn.resourcemanager.hostname}"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_JTOrRMPrin" prompt="TEST_CLUSTER_CONNECTION_JTOrRMPrin?" promptNeeded="false" type="id_String" value="yarn/_HOST@OFFICE.CORP.INDOSAT.COM"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_KeyTab" prompt="TEST_CLUSTER_CONNECTION_KeyTab?" promptNeeded="false" type="id_String" value="/home/hdp-rev/hdp-rev.keytab"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_NameNodePrin" prompt="TEST_CLUSTER_CONNECTION_NameNodePrin?" promptNeeded="false" type="id_String" value="hdfs://nameservice1"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_NameNodeUri" prompt="TEST_CLUSTER_CONNECTION_NameNodeUri?" promptNeeded="false" type="id_String" value="hdfs://nameservice1"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_Principal" prompt="TEST_CLUSTER_CONNECTION_Principal?" promptNeeded="false" type="id_String" value="hdp-rev@OFFICE.CORP.INDOSAT.COM"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_ResourceManager" prompt="TEST_CLUSTER_CONNECTION_ResourceManager?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:8032"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_ResourceManagerScheduler" prompt="TEST_CLUSTER_CONNECTION_ResourceManagerScheduler?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:8030"/>
+    <contextParameter comment="" name="TEST_CLUSTER_CONNECTION_StagingDirectory" prompt="TEST_CLUSTER_CONNECTION_StagingDirectory?" promptNeeded="false" type="id_String" value="/user"/>
+    <contextParameter comment="" name="HDPDEV_AdditionalParams" prompt="HDPDEV_AdditionalParams?" promptNeeded="false" repositoryContextId="_iKy_EKW7EeiIEd-8Phhh6A" type="id_String" value=""/>
+    <contextParameter comment="" name="HDPDEV_Login" prompt="HDPDEV_Login?" promptNeeded="false" repositoryContextId="_iKy_EKW7EeiIEd-8Phhh6A" type="id_String" value="hdpdev"/>
+    <contextParameter comment="" name="HDPDEV_Password" prompt="HDPDEV_Password?" promptNeeded="false" repositoryContextId="_iKy_EKW7EeiIEd-8Phhh6A" type="id_Password" value="vaerjeI9KWk="/>
+    <contextParameter comment="" name="HDPDEV_Port" prompt="HDPDEV_Port?" promptNeeded="false" repositoryContextId="_iKy_EKW7EeiIEd-8Phhh6A" type="id_String" value="1521"/>
+    <contextParameter comment="" name="HDPDEV_Schema" prompt="HDPDEV_Schema?" promptNeeded="false" repositoryContextId="_iKy_EKW7EeiIEd-8Phhh6A" type="id_String" value="HDPDEV"/>
+    <contextParameter comment="" name="HDPDEV_Server" prompt="HDPDEV_Server?" promptNeeded="false" repositoryContextId="_iKy_EKW7EeiIEd-8Phhh6A" type="id_String" value="10.128.57.76"/>
+    <contextParameter comment="" name="HDPDEV_ServiceName" prompt="HDPDEV_ServiceName?" promptNeeded="false" repositoryContextId="_iKy_EKW7EeiIEd-8Phhh6A" type="id_String" value="exadev"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="true"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Data/Talend/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_n_xzALdiEeib4cgC7jDfBA" name="DQTechnical"/>
+    <routinesParameter id="_n-h10LdiEeib4cgC7jDfBA" name="DataMasking"/>
+    <routinesParameter id="_n7-4ILdiEeib4cgC7jDfBA" name="DataOperation"/>
+    <routinesParameter id="_n_W8QLdiEeib4cgC7jDfBA" name="DataQualityDependencies"/>
+    <routinesParameter id="_n-vRMLdiEeib4cgC7jDfBA" name="DataQuality"/>
+    <routinesParameter id="_n_llwLdiEeib4cgC7jDfBA" name="DqStringHandling"/>
+    <routinesParameter id="_n8J3QLdiEeib4cgC7jDfBA" name="Mathematical"/>
+    <routinesParameter id="_n82a0LdiEeib4cgC7jDfBA" name="Numeric"/>
+    <routinesParameter id="_n9PcYLdiEeib4cgC7jDfBA" name="Relational"/>
+    <routinesParameter id="_n34bQLdiEeib4cgC7jDfBA" name="SQLike"/>
+    <routinesParameter id="_n9cQsLdiEeib4cgC7jDfBA" name="StringHandling"/>
+    <routinesParameter id="_n9psELdiEeib4cgC7jDfBA" name="TalendDataGenerator"/>
+    <routinesParameter id="_n94VkLdiEeib4cgC7jDfBA" name="TalendDate"/>
+    <routinesParameter id="_n-WPoLdiEeib4cgC7jDfBA" name="TalendStringUtil"/>
+    <routinesParameter id="_n-G_ELdiEeib4cgC7jDfBA" name="TalendString"/>
+  </parameters>
+  <node componentName="tOracleConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleConnection_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_0hoDIKUQEeiHmYFshqYS2A" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SERVICE_NAME"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="RAC_URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_TNS_FILE" value="false"/>
+    <elementParameter field="FILE" name="TNS_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TNS_EDITOR" name="TNS_EDITOR" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;10.128.57.76&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="ORACLE_SERVICE_NAME" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;exadev&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;HDPDEV&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;hdpdev&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="NPGoNbIf92O/HhoP+70eLg=="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="true"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="&quot;dbConn&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:thin:USER/MDP@server&quot;" show="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="DBCONN"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleInput_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11-6" show="false"/>
+    <elementParameter field="TEXT" name="RAC_URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="Oracle" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:oci:/@talend&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT DISTINCT A.COLL_JOB_ID FROM LOG_TLND_FILE_COLLECT A LEFT JOIN LOG_TLND_FILE_TO_JOB B ON (A.COLL_JOB_ID=B.COLL_JOB_ID) WHERE B.COLL_JOB_ID IS NULL AND A.PRC_TP='&quot;+context.prc_tp+&quot;' AND ROWNUM=1&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="oracle_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;" show="false"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="COLL_JOB_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tOracleInput_1">
+      <column comment="" key="false" length="100" name="COLL_JOB_ID" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="100" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="224" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_9BmOkMeKEei2m5d2NyRX9g-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out1">
+      <column comment="" key="false" length="100" name="COLL_JOB_ID" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="100" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="out1">
+        <mapperTableEntries name="COLL_JOB_ID" expression="row2.COLL_JOB_ID " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="COLL_JOB_ID" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_1" show="false"/>
+    <elementParameter field="TABLE" name="VARIABLES">
+      <elementValue elementRef="KEY" value="&quot;prev_coll_job_id&quot;"/>
+      <elementValue elementRef="VALUE" value="out1.COLL_JOB_ID"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSetGlobalVar_1">
+      <column comment="" key="false" length="100" name="COLL_JOB_ID" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="100" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Starting collection..&quot;+context.coll_job_id);&#xA;try{&#xA;&#x9;System.out.println(&quot;Generate new coll_job_id...&quot;);&#xA;&#x9;if (((String)globalMap.get(&quot;prev_coll_job_id&quot;))==null){&#xA;&#x9;&#x9;context.coll_job_id = TalendDate.TO_CHAR(TalendDate.getCurrentDate(), &quot;yyyyMMddHH24mmss&quot;);&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;}else {&#xA;&#x9;&#x9;context.coll_job_id = ((String)globalMap.get(&quot;prev_coll_job_id&quot;));&#xA;&#x9;}&#xA;} catch(NullPointerException e) {&#xA;&#x9;System.out.println(&quot;Error NullPointerException&quot;);&#xA;}&#xA;context.job_id=context.coll_job_id+context.prc_tp;&#xA;System.out.println(&quot;prc_dt = &quot;+context.prc_dt);&#xA;System.out.println(&quot;prc_tp = &quot;+context.prc_tp);&#xA;System.out.println(&quot;coll_job_id = &quot;+context.coll_job_id);&#xA;System.out.println(&quot;main_dir = &quot;+context.main_dir);&#xA;System.out.println(&quot;logged_dir = &quot;+context.logged_dir);&#xA;System.out.println(&quot;backup_dir = &quot;+context.backup_dir);&#xA;System.out.println(&quot;filemask = &quot;+context.filemask);&#xA;System.out.println(&quot;min_files = &quot;+context.min_files);&#xA;System.out.println(&quot;logged Path &quot; + context.logged_dir+&quot;/&quot;+context.coll_job_id);&#xA;System.out.println(&quot;===============================&quot;);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileList_1" show="false"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.logged_dir+&quot;/&quot;+context.coll_job_id"/>
+    <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
+    <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="YES"/>
+    <elementParameter field="CHECK" name="ERROR" value="false"/>
+    <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="true"/>
+    <elementParameter field="TABLE" name="FILES">
+      <elementValue elementRef="FILEMASK" value="context.filemask"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILESIZE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_MODIFIEDDATE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_ASC" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_DESC" value="false"/>
+    <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
+    <elementParameter field="TEXT" name="EXCLUDEFILEMASK" value="&quot;*.txt&quot;" show="false"/>
+    <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileList_2" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;/home/apps_dev/collection/sgsn_huawei/logged/20181004104214&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
+    <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="YES"/>
+    <elementParameter field="CHECK" name="ERROR" value="false"/>
+    <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="true"/>
+    <elementParameter field="TABLE" name="FILES">
+      <elementValue elementRef="FILEMASK" value="&quot;SGM*gz&quot;"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILESIZE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_MODIFIEDDATE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_ASC" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_DESC" value="false"/>
+    <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
+    <elementParameter field="TEXT" name="EXCLUDEFILEMASK" value="&quot;*.txt&quot;" show="false"/>
+    <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFileProperties" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileProperties_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;tFileList_2_CURRENT_FILEPATH&quot;))"/>
+    <elementParameter field="CHECK" name="MD5" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileProperties_1">
+      <column key="false" length="255" name="abs_path" nullable="true" precision="0" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
+      <column key="false" length="255" name="dirname" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="255" name="basename" nullable="true" precision="0" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
+      <column key="false" length="10" name="mode_string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="size" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="mtime" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="20" name="mtime_string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1184" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tAggregateRow_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TABLE" name="GROUPBYS">
+      <elementValue elementRef="OUTPUT_COLUMN" value="basename"/>
+      <elementValue elementRef="INPUT_COLUMN" value="basename"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="abs_path"/>
+      <elementValue elementRef="INPUT_COLUMN" value="abs_path"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="OPERATIONS">
+      <elementValue elementRef="OUTPUT_COLUMN" value="size"/>
+      <elementValue elementRef="FUNCTION" value="sum"/>
+      <elementValue elementRef="INPUT_COLUMN" value="size"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LIST_DELIMITER" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="USE_FINANCIAL_PRECISION" value="true"/>
+    <elementParameter field="CHECK" name="CHECK_TYPE_OVERFLOW" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_ULP" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tAggregateRow_1">
+      <column defaultValue="" key="false" length="20" name="size" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="basename" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="abs_path" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1376" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="size"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="basename"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="abs_path"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column defaultValue="" key="false" length="20" name="size" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="basename" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="abs_path" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="A_FILE_COLLECT"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_HrlFAMeLEei2m5d2NyRX9g"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="main_dir"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.main_dir"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="logged_dir"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.logged_dir"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="filemask"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.filemask"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="coll_job_id"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.coll_job_id"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="prc_dt"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.prc_dt"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="prc_tp"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.prc_tp"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="A_FILE_COLLECT"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_1"/>
+  </node>
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tOracleClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1344" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleClose_1" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="B_FILE_COLLECT"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="DEV"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_5bx3QMeyEei2m5d2NyRX9g"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="main_dir"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.main_dir"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="logged_dir"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.logged_dir"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="backup_dir"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.backup_dir"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="filemask"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.filemask"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="output_dir"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.output_dir"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="output_filename"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.output_filename"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="prc_dt"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.prc_dt"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="prc_tp"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.prc_tp"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="job_id"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.job_id"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="list_files"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="((String)globalMap.get(&quot;list_files&quot;))"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_2"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Amount of files is under minimun files to processed&quot;);&#xA;System.out.println(&quot;list_files = &quot;+((String)globalMap.get(&quot;list_files&quot;)));&#xA;System.out.println(&quot;Count_dupl = &quot;+context.nb_dupl);&#xA;System.out.println(&quot;NB File = &quot; +(Integer)globalMap.get(&quot;tFileList_1_NB_FILE&quot;));"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_3"/>
+  </node>
+  <node componentName="tOracleRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1312" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleRow_4" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11-6" show="false"/>
+    <elementParameter field="TEXT" name="RAC_URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="Oracle" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;drop table COLL_&quot;+context.coll_job_id"/>
+    <elementParameter field="CLOSED_LIST" name="USE_NB_LINE" value="NONE"/>
+    <elementParameter field="LABEL" name="USE_NB_LINE_NOTE" value="* Only used if the query is an insert, an update or a delete."/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="DROP_TEMP_FILE_COLLECT"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tOracleRow_4"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tOracleRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleRow_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11-6" show="false"/>
+    <elementParameter field="TEXT" name="RAC_URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="Oracle" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;insert into LOG_TLND_FILE_COLLECT &#xD;&#xA;(select a.prc_dt ,a.filename,a.source_dir,a.prc_tp, a.filesize, a.total_records,current_timestamp, a.coll_job_id,a.cksum_file&#xD;&#xA;from COLL_&quot;+context.coll_job_id+&quot; a&#xD;&#xA;left join LOG_TLND_FILE_COLLECT b on (a.cksum_file=b.cksum_file or a.filename=b.filename) &#xD;&#xA;where b.coll_job_id is null)&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="USE_NB_LINE" value="NB_LINE_INSERTED"/>
+    <elementParameter field="LABEL" name="USE_NB_LINE_NOTE" value="* Only used if the query is an insert, an update or a delete."/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="INSERT_FILE_COLLECT"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tOracleRow_1"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tOracleRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleRow_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11-6" show="false"/>
+    <elementParameter field="TEXT" name="RAC_URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="Oracle" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;insert into LOG_TLND_DUPL_LIST&#xD;&#xA;select b.filename,b.cksum_file,a.prc_tp,current_timestamp, a.coll_job_id, case when a.cksum_file=b.cksum_file then 'Duplicate checksum' when a.filename=b.filename then 'Duplicate filename' end as dup_reason&#xD;&#xA;from COLL_&quot;+context.coll_job_id+&quot; a&#xD;&#xA;left join LOG_TLND_FILE_COLLECT b on (a.cksum_file=b.cksum_file or a.filename=b.filename) &#xD;&#xA;where b.coll_job_id is not null&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="USE_NB_LINE" value="NB_LINE_INSERTED"/>
+    <elementParameter field="LABEL" name="USE_NB_LINE_NOTE" value="* Only used if the query is an insert, an update or a delete."/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="INSERT_TO_DUPL"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tOracleRow_2"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleInput_3" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11-6" show="false"/>
+    <elementParameter field="TEXT" name="RAC_URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="Oracle" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:oci:/@talend&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select a.coll_job_id as a_coll_job_id ,a.filename,a.source_dir,b.coll_job_id as b_coll_job_id&#xD;&#xA;from COLL_&quot;+context.coll_job_id+&quot; a&#xD;&#xA;left join LOG_TLND_FILE_COLLECT b on (a.cksum_file=b.cksum_file and a.filename=b.filename) &quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="oracle_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;" show="false"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="A_COLL_JOB_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FILENAME"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SOURCE_DIR"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="B_COLL_JOB_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tOracleInput_3">
+      <column comment="" key="false" length="50" name="A_COLL_JOB_ID" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="FILENAME" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="255" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="SOURCE_DIR" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="255" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="B_COLL_JOB_ID" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="255" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="416" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_9BmOkMeKEei2m5d2NyRX9g-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out">
+      <column comment="" key="false" length="50" name="COLL_JOB_ID" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="FILEPATH" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="255" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" name="dupl">
+      <column comment="" key="false" length="50" name="COLL_JOB_ID" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="FILEPATH" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="255" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="out" expressionFilter="row1.B_COLL_JOB_ID == null || row1.B_COLL_JOB_ID.equals(&quot;&quot;)" activateExpressionFilter="true">
+        <mapperTableEntries name="COLL_JOB_ID" expression="row1.A_COLL_JOB_ID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FILEPATH" expression="row1.SOURCE_DIR +&quot;/&quot;+ row1.FILENAME " type="id_String" nullable="true"/>
+      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="dupl" expressionFilter="row1.B_COLL_JOB_ID != null &amp;&amp; !row1.B_COLL_JOB_ID.equals(&quot;&quot;)" activateExpressionFilter="true">
+        <mapperTableEntries name="COLL_JOB_ID" expression="row1.A_COLL_JOB_ID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FILEPATH" expression="row1.SOURCE_DIR +&quot;/&quot;+ row1.FILENAME " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="A_COLL_JOB_ID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FILENAME" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SOURCE_DIR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="B_COLL_JOB_ID" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tDenormalize" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDenormalize_1" show="false"/>
+    <elementParameter field="TABLE" name="DENORMALIZE_COLUMNS">
+      <elementValue elementRef="INPUT_COLUMN" value="FILEPATH"/>
+      <elementValue elementRef="DELIMITER" value="&quot; &quot;"/>
+      <elementValue elementRef="MERGE" value="false"/>
+    </elementParameter>
+    <elementParameter field="LABEL" name="NOTE" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDenormalize_1">
+      <column comment="" key="false" length="50" name="COLL_JOB_ID" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="FILEPATH" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="255" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_2" show="false"/>
+    <elementParameter field="TABLE" name="VARIABLES">
+      <elementValue elementRef="KEY" value="&quot;list_files&quot;"/>
+      <elementValue elementRef="VALUE" value="row5.FILEPATH"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSetGlobalVar_2">
+      <column comment="" key="false" length="50" name="COLL_JOB_ID" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="FILEPATH" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="255" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaFlex" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaFlex_2" show="false"/>
+    <elementParameter field="CHECK" name="DATA_AUTO_PROPAGATE" value="true"/>
+    <elementParameter field="MEMO_JAVA" name="CODE_START" value="// start part of your Java code&#xA;      "/>
+    <elementParameter field="MEMO_JAVA" name="CODE_MAIN" value="// here is the main part of the component,&#xA;// a piece of code executed in the row&#xA;// loop&#xA;context.nb_dupl++;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE_END" value="// end of the component, outside/closing the loop&#xA;      "/>
+    <elementParameter field="CHECK" name="Version_V2_0" value="false" show="false"/>
+    <elementParameter field="CHECK" name="Version_V3_2" value="false" show="false"/>
+    <elementParameter field="CHECK" name="Version_V4.0" value="true" show="false"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaFlex_2"/>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tOracleConnection_1" offsetLabelX="0" offsetLabelY="0" source="tOracleConnection_1" target="tOracleInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tOracleInput_1" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tOracleInput_1" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_1" target="tJava_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tSetGlobalVar_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tRunJob_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tFileList_1" target="tJava_3">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tFileList_1_NB_FILE&quot;))&lt;=context.min_files"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If2" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tFileList_1" target="tRunJob_2">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tFileList_1_NB_FILE&quot;))>context.min_files &amp;&amp; ((String)globalMap.get(&quot;list_files&quot;))!=null"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If1" show="false"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_2" offsetLabelX="0" offsetLabelY="0" source="tFileList_2" target="tFileProperties_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tFileProperties_1" offsetLabelX="0" offsetLabelY="0" source="tFileProperties_1" target="tAggregateRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tAggregateRow_1" offsetLabelX="0" offsetLabelY="0" source="tAggregateRow_1" target="tLogRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="basename"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="abs_path"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_1" offsetLabelX="0" offsetLabelY="0" source="tRunJob_1" target="tOracleInput_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tOracleClose_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_2" offsetLabelX="0" offsetLabelY="0" source="tRunJob_2" target="tOracleRow_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk5" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tOracleRow_1" offsetLabelX="0" offsetLabelY="0" source="tOracleRow_1" target="tFileList_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk7" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tOracleInput_3" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_3" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tOracleInput_3" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_3" target="tOracleRow_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out" lineStyle="0" metaname="out" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_2" target="tDenormalize_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="dupl" lineStyle="0" metaname="dupl" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_2" target="tJavaFlex_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="dupl" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tDenormalize_1" offsetLabelX="0" offsetLabelY="0" source="tDenormalize_1" target="tSetGlobalVar_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJavaFlex_2" offsetLabelX="0" offsetLabelY="0" source="tJavaFlex_2" target="tOracleRow_2">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.nb_dupl>0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If3" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleInput_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="GET AVAILABLE COLL_JOB_ID"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileList_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileList_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleClose_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleRow_4" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleRow_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleRow_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleInput_3" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="REMOVE DUPLICATE &amp; GEN LIST FILES"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

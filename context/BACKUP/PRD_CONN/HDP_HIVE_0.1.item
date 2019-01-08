@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
-  <talendfile:ContextType xmi:id="_tCx1MPIuEei04LlwpOmL_w" confirmationNeeded="false" name="Default">
-    <contextParameter xmi:id="_tCx1MfIuEei04LlwpOmL_w" comment="" name="HDP_HIVE_HiveKeyTabPrincipal" prompt="HDP_HIVE_HiveKeyTabPrincipal?" promptNeeded="false" type="id_String" value="apps_dev@OFFICE.CORP.INDOSAT.COM"/>
-    <contextParameter xmi:id="_tCx1MvIuEei04LlwpOmL_w" comment="" name="HDP_HIVE_HivePrincipal" prompt="HDP_HIVE_HivePrincipal?" promptNeeded="false" type="id_String" value="hive/_HOST@EXAMPLE.COM"/>
-    <contextParameter xmi:id="_tCx1M_IuEei04LlwpOmL_w" comment="" name="HDP_HIVE_hiveAdditionalJDBCParameters" prompt="HDP_HIVE_hiveAdditionalJDBCParameters?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_tCx1NPIuEei04LlwpOmL_w" comment="" name="HDP_HIVE_Password" prompt="HDP_HIVE_Password?" promptNeeded="false" type="id_Password" value=""/>
-    <contextParameter xmi:id="_tCx1NfIuEei04LlwpOmL_w" comment="" name="HDP_HIVE_Database" prompt="HDP_HIVE_Database?" promptNeeded="false" type="id_String" value="default"/>
-    <contextParameter xmi:id="_tCx1NvIuEei04LlwpOmL_w" comment="" name="HDP_HIVE_Server" prompt="HDP_HIVE_Server?" promptNeeded="false" type="id_String" value="hdd1-tms0001.office.corp.indosat.com"/>
-    <contextParameter xmi:id="_tCx1N_IuEei04LlwpOmL_w" comment="" name="HDP_HIVE_Login" prompt="HDP_HIVE_Login?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_tCx1OPIuEei04LlwpOmL_w" comment="" name="HDP_HIVE_HiveKeyTab" prompt="HDP_HIVE_HiveKeyTab?" promptNeeded="false" type="id_String" value="/home/apps_dev/apps_dev.keytab"/>
-    <contextParameter xmi:id="_tCx1OfIuEei04LlwpOmL_w" comment="" name="HDP_HIVE_Port" prompt="HDP_HIVE_Port?" promptNeeded="false" type="id_String" value="10000"/>
+  <talendfile:ContextType xmi:id="_gv2RsANKEempO5IgaSiASw" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_gv2RsQNKEempO5IgaSiASw" comment="" name="HDP_HIVE_HiveKeyTabPrincipal" prompt="HDP_HIVE_HiveKeyTabPrincipal?" promptNeeded="false" type="id_String" value="apps_dev@OFFICE.CORP.INDOSAT.COM"/>
+    <contextParameter xmi:id="_gv2RsgNKEempO5IgaSiASw" comment="" name="HDP_HIVE_HivePrincipal" prompt="HDP_HIVE_HivePrincipal?" promptNeeded="false" type="id_String" value="hive/_HOST@EXAMPLE.COM"/>
+    <contextParameter xmi:id="_gv2RswNKEempO5IgaSiASw" comment="" name="HDP_HIVE_hiveAdditionalJDBCParameters" prompt="HDP_HIVE_hiveAdditionalJDBCParameters?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_gv2RtANKEempO5IgaSiASw" comment="" name="HDP_HIVE_Password" prompt="HDP_HIVE_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_gv2RtQNKEempO5IgaSiASw" comment="" name="HDP_HIVE_Database" prompt="HDP_HIVE_Database?" promptNeeded="false" type="id_String" value="default"/>
+    <contextParameter xmi:id="_gv2RtgNKEempO5IgaSiASw" comment="" name="HDP_HIVE_Server" prompt="HDP_HIVE_Server?" promptNeeded="false" type="id_String" value="hdd1-tms0001.office.corp.indosat.com"/>
+    <contextParameter xmi:id="_gv2RtwNKEempO5IgaSiASw" comment="" name="HDP_HIVE_Login" prompt="HDP_HIVE_Login?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_gv2RuANKEempO5IgaSiASw" comment="" name="HDP_HIVE_HiveKeyTab" prompt="HDP_HIVE_HiveKeyTab?" promptNeeded="false" type="id_String" value="/home/apps_dev/apps_dev.keytab"/>
+    <contextParameter xmi:id="_gv2RuQNKEempO5IgaSiASw" comment="" name="HDP_HIVE_Port" prompt="HDP_HIVE_Port?" promptNeeded="false" type="id_String" value="10000"/>
   </talendfile:ContextType>
-  <talendfile:ContextType xmi:id="_tCx1OvIuEei04LlwpOmL_w" confirmationNeeded="false" name="DEV">
-    <contextParameter xmi:id="_tCx1O_IuEei04LlwpOmL_w" comment="" name="HDP_HIVE_HiveKeyTabPrincipal" prompt="HDP_HIVE_HiveKeyTabPrincipal?" promptNeeded="false" type="id_String" value="apps_dev@OFFICE.CORP.INDOSAT.COM"/>
-    <contextParameter xmi:id="_tCx1PPIuEei04LlwpOmL_w" comment="" name="HDP_HIVE_HivePrincipal" prompt="HDP_HIVE_HivePrincipal?" promptNeeded="false" type="id_String" value="hive/_HOST@EXAMPLE.COM"/>
-    <contextParameter xmi:id="_tCx1PfIuEei04LlwpOmL_w" comment="" name="HDP_HIVE_hiveAdditionalJDBCParameters" prompt="HDP_HIVE_hiveAdditionalJDBCParameters?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_tCx1PvIuEei04LlwpOmL_w" comment="" name="HDP_HIVE_Password" prompt="HDP_HIVE_Password?" promptNeeded="false" type="id_Password" value=""/>
-    <contextParameter xmi:id="_tCx1P_IuEei04LlwpOmL_w" comment="" name="HDP_HIVE_Database" prompt="HDP_HIVE_Database?" promptNeeded="false" type="id_String" value="default"/>
-    <contextParameter xmi:id="_tCx1QPIuEei04LlwpOmL_w" comment="" name="HDP_HIVE_Server" prompt="HDP_HIVE_Server?" promptNeeded="false" type="id_String" value="hdd1-tms0001.office.corp.indosat.com"/>
-    <contextParameter xmi:id="_tCx1QfIuEei04LlwpOmL_w" comment="" name="HDP_HIVE_Login" prompt="HDP_HIVE_Login?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_tCx1QvIuEei04LlwpOmL_w" comment="" name="HDP_HIVE_HiveKeyTab" prompt="HDP_HIVE_HiveKeyTab?" promptNeeded="false" type="id_String" value="/home/apps_dev/apps_dev.keytab"/>
-    <contextParameter xmi:id="_tCx1Q_IuEei04LlwpOmL_w" comment="" name="HDP_HIVE_Port" prompt="HDP_HIVE_Port?" promptNeeded="false" type="id_String" value="10000"/>
+  <talendfile:ContextType xmi:id="_gv2RugNKEempO5IgaSiASw" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_gv2RuwNKEempO5IgaSiASw" comment="" name="HDP_HIVE_HiveKeyTabPrincipal" prompt="HDP_HIVE_HiveKeyTabPrincipal?" promptNeeded="false" type="id_String" value="apps_dev@OFFICE.CORP.INDOSAT.COM"/>
+    <contextParameter xmi:id="_gv2RvANKEempO5IgaSiASw" comment="" name="HDP_HIVE_HivePrincipal" prompt="HDP_HIVE_HivePrincipal?" promptNeeded="false" type="id_String" value="hive/_HOST@EXAMPLE.COM"/>
+    <contextParameter xmi:id="_gv2RvQNKEempO5IgaSiASw" comment="" name="HDP_HIVE_hiveAdditionalJDBCParameters" prompt="HDP_HIVE_hiveAdditionalJDBCParameters?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_gv2RvgNKEempO5IgaSiASw" comment="" name="HDP_HIVE_Password" prompt="HDP_HIVE_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_gv2RvwNKEempO5IgaSiASw" comment="" name="HDP_HIVE_Database" prompt="HDP_HIVE_Database?" promptNeeded="false" type="id_String" value="default"/>
+    <contextParameter xmi:id="_gv2RwANKEempO5IgaSiASw" comment="" name="HDP_HIVE_Server" prompt="HDP_HIVE_Server?" promptNeeded="false" type="id_String" value="hdd1-tms0001.office.corp.indosat.com"/>
+    <contextParameter xmi:id="_gv2RwQNKEempO5IgaSiASw" comment="" name="HDP_HIVE_Login" prompt="HDP_HIVE_Login?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_gv2RwgNKEempO5IgaSiASw" comment="" name="HDP_HIVE_HiveKeyTab" prompt="HDP_HIVE_HiveKeyTab?" promptNeeded="false" type="id_String" value="/home/apps_dev/apps_dev.keytab"/>
+    <contextParameter xmi:id="_gv2RwwNKEempO5IgaSiASw" comment="" name="HDP_HIVE_Port" prompt="HDP_HIVE_Port?" promptNeeded="false" type="id_String" value="10000"/>
   </talendfile:ContextType>
-  <talendfile:ContextType xmi:id="_tCx1RPIuEei04LlwpOmL_w" confirmationNeeded="false" name="PRD">
-    <contextParameter xmi:id="_tCx1RfIuEei04LlwpOmL_w" comment="" name="HDP_HIVE_HiveKeyTabPrincipal" prompt="HDP_HIVE_HiveKeyTabPrincipal?" promptNeeded="false" type="id_String" value="hdp-rev@OFFICE.CORP.INDOSAT.COM"/>
-    <contextParameter xmi:id="_tCx1RvIuEei04LlwpOmL_w" comment="" name="HDP_HIVE_HivePrincipal" prompt="HDP_HIVE_HivePrincipal?" promptNeeded="false" type="id_String" value="hive/_HOST@OFFICE.CORP.INDOSAT.COM"/>
-    <contextParameter xmi:id="_tCx1R_IuEei04LlwpOmL_w" comment="" name="HDP_HIVE_hiveAdditionalJDBCParameters" prompt="HDP_HIVE_hiveAdditionalJDBCParameters?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_tCx1SPIuEei04LlwpOmL_w" comment="" name="HDP_HIVE_Password" prompt="HDP_HIVE_Password?" promptNeeded="false" type="id_Password" value=""/>
-    <contextParameter xmi:id="_tCx1SfIuEei04LlwpOmL_w" comment="" name="HDP_HIVE_Database" prompt="HDP_HIVE_Database?" promptNeeded="false" type="id_String" value="default"/>
-    <contextParameter xmi:id="_tCx1SvIuEei04LlwpOmL_w" comment="" name="HDP_HIVE_Server" prompt="HDP_HIVE_Server?" promptNeeded="false" type="id_String" value="hdp1-dms0002.office.corp.indosat.com"/>
-    <contextParameter xmi:id="_tCx1S_IuEei04LlwpOmL_w" comment="" name="HDP_HIVE_Login" prompt="HDP_HIVE_Login?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_tCx1TPIuEei04LlwpOmL_w" comment="" name="HDP_HIVE_HiveKeyTab" prompt="HDP_HIVE_HiveKeyTab?" promptNeeded="false" type="id_String" value="/home/hdp-rev/hdp-rev.keytab"/>
-    <contextParameter xmi:id="_tCx1TfIuEei04LlwpOmL_w" comment="" name="HDP_HIVE_Port" prompt="HDP_HIVE_Port?" promptNeeded="false" type="id_String" value="10000"/>
+  <talendfile:ContextType xmi:id="_gv2RxANKEempO5IgaSiASw" confirmationNeeded="false" name="PRD">
+    <contextParameter xmi:id="_gv2RxQNKEempO5IgaSiASw" comment="" name="HDP_HIVE_HiveKeyTabPrincipal" prompt="HDP_HIVE_HiveKeyTabPrincipal?" promptNeeded="false" type="id_String" value="hdp-rev@OFFICE.CORP.INDOSAT.COM"/>
+    <contextParameter xmi:id="_gv2RxgNKEempO5IgaSiASw" comment="" name="HDP_HIVE_HivePrincipal" prompt="HDP_HIVE_HivePrincipal?" promptNeeded="false" type="id_String" value="hive/_HOST@OFFICE.CORP.INDOSAT.COM"/>
+    <contextParameter xmi:id="_gv2RxwNKEempO5IgaSiASw" comment="" name="HDP_HIVE_hiveAdditionalJDBCParameters" prompt="HDP_HIVE_hiveAdditionalJDBCParameters?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_gv2RyANKEempO5IgaSiASw" comment="" name="HDP_HIVE_Password" prompt="HDP_HIVE_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_gv2RyQNKEempO5IgaSiASw" comment="" name="HDP_HIVE_Database" prompt="HDP_HIVE_Database?" promptNeeded="false" type="id_String" value="default"/>
+    <contextParameter xmi:id="_gv2RygNKEempO5IgaSiASw" comment="" name="HDP_HIVE_Server" prompt="HDP_HIVE_Server?" promptNeeded="false" type="id_String" value="hdp1-dms0002.office.corp.indosat.com"/>
+    <contextParameter xmi:id="_gv2RywNKEempO5IgaSiASw" comment="" name="HDP_HIVE_Login" prompt="HDP_HIVE_Login?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_gv2RzANKEempO5IgaSiASw" comment="" name="HDP_HIVE_HiveKeyTab" prompt="HDP_HIVE_HiveKeyTab?" promptNeeded="false" type="id_String" value="/home/hdp-rev/hdp-rev.keytab"/>
+    <contextParameter xmi:id="_gv2RzQNKEempO5IgaSiASw" comment="" name="HDP_HIVE_Port" prompt="HDP_HIVE_Port?" promptNeeded="false" type="id_String" value="10000"/>
   </talendfile:ContextType>
-  <talendfile:ContextType xmi:id="_tCx1TvIuEei04LlwpOmL_w" confirmationNeeded="false" name="UAT">
-    <contextParameter xmi:id="_tCx1T_IuEei04LlwpOmL_w" comment="" name="HDP_HIVE_HiveKeyTabPrincipal" prompt="HDP_HIVE_HiveKeyTabPrincipal?" promptNeeded="false" type="id_String" value="apps_dev@OFFICE.CORP.INDOSAT.COM"/>
-    <contextParameter xmi:id="_tCx1UPIuEei04LlwpOmL_w" comment="" name="HDP_HIVE_HivePrincipal" prompt="HDP_HIVE_HivePrincipal?" promptNeeded="false" type="id_String" value="hive/_HOST@EXAMPLE.COM"/>
-    <contextParameter xmi:id="_tCx1UfIuEei04LlwpOmL_w" comment="" name="HDP_HIVE_hiveAdditionalJDBCParameters" prompt="HDP_HIVE_hiveAdditionalJDBCParameters?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_tCx1UvIuEei04LlwpOmL_w" comment="" name="HDP_HIVE_Password" prompt="HDP_HIVE_Password?" promptNeeded="false" type="id_Password" value=""/>
-    <contextParameter xmi:id="_tCx1U_IuEei04LlwpOmL_w" comment="" name="HDP_HIVE_Database" prompt="HDP_HIVE_Database?" promptNeeded="false" type="id_String" value="default"/>
-    <contextParameter xmi:id="_tCx1VPIuEei04LlwpOmL_w" comment="" name="HDP_HIVE_Server" prompt="HDP_HIVE_Server?" promptNeeded="false" type="id_String" value="hdd1-tms0001.office.corp.indosat.com"/>
-    <contextParameter xmi:id="_tCx1VfIuEei04LlwpOmL_w" comment="" name="HDP_HIVE_Login" prompt="HDP_HIVE_Login?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_tCx1VvIuEei04LlwpOmL_w" comment="" name="HDP_HIVE_HiveKeyTab" prompt="HDP_HIVE_HiveKeyTab?" promptNeeded="false" type="id_String" value="/home/apps_dev/apps_dev.keytab"/>
-    <contextParameter xmi:id="_tCx1V_IuEei04LlwpOmL_w" comment="" name="HDP_HIVE_Port" prompt="HDP_HIVE_Port?" promptNeeded="false" type="id_String" value="10000"/>
+  <talendfile:ContextType xmi:id="_gv2RzgNKEempO5IgaSiASw" confirmationNeeded="false" name="UAT">
+    <contextParameter xmi:id="_gv2RzwNKEempO5IgaSiASw" comment="" name="HDP_HIVE_HiveKeyTabPrincipal" prompt="HDP_HIVE_HiveKeyTabPrincipal?" promptNeeded="false" type="id_String" value="apps_dev@OFFICE.CORP.INDOSAT.COM"/>
+    <contextParameter xmi:id="_gv2R0ANKEempO5IgaSiASw" comment="" name="HDP_HIVE_HivePrincipal" prompt="HDP_HIVE_HivePrincipal?" promptNeeded="false" type="id_String" value="hive/_HOST@EXAMPLE.COM"/>
+    <contextParameter xmi:id="_gv2R0QNKEempO5IgaSiASw" comment="" name="HDP_HIVE_hiveAdditionalJDBCParameters" prompt="HDP_HIVE_hiveAdditionalJDBCParameters?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_gv2R0gNKEempO5IgaSiASw" comment="" name="HDP_HIVE_Password" prompt="HDP_HIVE_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_gv2R0wNKEempO5IgaSiASw" comment="" name="HDP_HIVE_Database" prompt="HDP_HIVE_Database?" promptNeeded="false" type="id_String" value="default"/>
+    <contextParameter xmi:id="_gv2R1ANKEempO5IgaSiASw" comment="" name="HDP_HIVE_Server" prompt="HDP_HIVE_Server?" promptNeeded="false" type="id_String" value="hdd1-tms0001.office.corp.indosat.com"/>
+    <contextParameter xmi:id="_gv2R1QNKEempO5IgaSiASw" comment="" name="HDP_HIVE_Login" prompt="HDP_HIVE_Login?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_gv2R1gNKEempO5IgaSiASw" comment="" name="HDP_HIVE_HiveKeyTab" prompt="HDP_HIVE_HiveKeyTab?" promptNeeded="false" type="id_String" value="/home/apps_dev/apps_dev.keytab"/>
+    <contextParameter xmi:id="_gv2R1wNKEempO5IgaSiASw" comment="" name="HDP_HIVE_Port" prompt="HDP_HIVE_Port?" promptNeeded="false" type="id_String" value="10000"/>
   </talendfile:ContextType>
 </xmi:XMI>

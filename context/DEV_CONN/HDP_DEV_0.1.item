@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_tG-_wfIuEei04LlwpOmL_w" confirmationNeeded="false" name="Default">
-  <contextParameter xmi:id="_tG-_wvIuEei04LlwpOmL_w" comment="" name="HDP_DEV_JobHistroyPrin" prompt="HDP_DEV_JobHistroyPrin?" promptNeeded="false" type="id_String" value="mapred/_HOST@OFFICE.CORP.INDOSAT.COM"/>
-  <contextParameter xmi:id="_tG-_w_IuEei04LlwpOmL_w" comment="" name="HDP_DEV_ResourceManager" prompt="HDP_DEV_ResourceManager?" promptNeeded="false" type="id_String" value="hdd1-tms0001.office.corp.indosat.com:8032"/>
-  <contextParameter xmi:id="_tG-_xPIuEei04LlwpOmL_w" comment="" name="HDP_DEV_JTOrRMPrin" prompt="HDP_DEV_JTOrRMPrin?" promptNeeded="false" type="id_String" value="yarn/_HOST@OFFICE.CORP.INDOSAT.COM"/>
-  <contextParameter xmi:id="_tG-_xfIuEei04LlwpOmL_w" comment="" name="HDP_DEV_Principal" prompt="HDP_DEV_Principal?" promptNeeded="false" type="id_String" value="apps_dev@OFFICE.CORP.INDOSAT.COM"/>
-  <contextParameter xmi:id="_tG-_xvIuEei04LlwpOmL_w" comment="" name="HDP_DEV_ResourceManagerScheduler" prompt="HDP_DEV_ResourceManagerScheduler?" promptNeeded="false" type="id_String" value="hdd1-tms0001.office.corp.indosat.com:8030"/>
-  <contextParameter xmi:id="_tG-_x_IuEei04LlwpOmL_w" comment="" name="HDP_DEV_NameNodeUri" prompt="HDP_DEV_NameNodeUri?" promptNeeded="false" type="id_String" value="hdfs://testnameservice1"/>
-  <contextParameter xmi:id="_tG-_yPIuEei04LlwpOmL_w" comment="" name="HDP_DEV_StagingDirectory" prompt="HDP_DEV_StagingDirectory?" promptNeeded="false" type="id_String" value="/user"/>
-  <contextParameter xmi:id="_tG-_yfIuEei04LlwpOmL_w" comment="" name="HDP_DEV_NameNodePrin" prompt="HDP_DEV_NameNodePrin?" promptNeeded="false" type="id_String" value="hdfs/_HOST@OFFICE.CORP.INDOSAT.COM"/>
-  <contextParameter xmi:id="_tG-_yvIuEei04LlwpOmL_w" comment="" name="HDP_DEV_KeyTab" prompt="HDP_DEV_KeyTab?" promptNeeded="false" type="id_String" value="/home/apps_dev/apps_dev.keytab"/>
-  <contextParameter xmi:id="_tG-_y_IuEei04LlwpOmL_w" comment="" name="HDP_DEV_JobHistory" prompt="HDP_DEV_JobHistory?" promptNeeded="false" type="id_String" value="hdd1-tms0002.office.corp.indosat.com:10020"/>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_g1NS0QNKEempO5IgaSiASw" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_g1NS0gNKEempO5IgaSiASw" comment="" name="HDP_DEV_JobHistroyPrin" prompt="HDP_DEV_JobHistroyPrin?" promptNeeded="false" type="id_String" value="mapred/_HOST@OFFICE.CORP.INDOSAT.COM"/>
+  <contextParameter xmi:id="_g1NS0wNKEempO5IgaSiASw" comment="" name="HDP_DEV_ResourceManager" prompt="HDP_DEV_ResourceManager?" promptNeeded="false" type="id_String" value="hdd1-tms0001.office.corp.indosat.com:8032"/>
+  <contextParameter xmi:id="_g1NS1ANKEempO5IgaSiASw" comment="" name="HDP_DEV_JTOrRMPrin" prompt="HDP_DEV_JTOrRMPrin?" promptNeeded="false" type="id_String" value="yarn/_HOST@OFFICE.CORP.INDOSAT.COM"/>
+  <contextParameter xmi:id="_g1NS1QNKEempO5IgaSiASw" comment="" name="HDP_DEV_Principal" prompt="HDP_DEV_Principal?" promptNeeded="false" type="id_String" value="apps_dev@OFFICE.CORP.INDOSAT.COM"/>
+  <contextParameter xmi:id="_g1NS1gNKEempO5IgaSiASw" comment="" name="HDP_DEV_ResourceManagerScheduler" prompt="HDP_DEV_ResourceManagerScheduler?" promptNeeded="false" type="id_String" value="hdd1-tms0001.office.corp.indosat.com:8030"/>
+  <contextParameter xmi:id="_g1NS1wNKEempO5IgaSiASw" comment="" name="HDP_DEV_NameNodeUri" prompt="HDP_DEV_NameNodeUri?" promptNeeded="false" type="id_String" value="hdfs://testnameservice1"/>
+  <contextParameter xmi:id="_g1NS2ANKEempO5IgaSiASw" comment="" name="HDP_DEV_StagingDirectory" prompt="HDP_DEV_StagingDirectory?" promptNeeded="false" type="id_String" value="/user"/>
+  <contextParameter xmi:id="_g1NS2QNKEempO5IgaSiASw" comment="" name="HDP_DEV_NameNodePrin" prompt="HDP_DEV_NameNodePrin?" promptNeeded="false" type="id_String" value="hdfs/_HOST@OFFICE.CORP.INDOSAT.COM"/>
+  <contextParameter xmi:id="_g1NS2gNKEempO5IgaSiASw" comment="" name="HDP_DEV_KeyTab" prompt="HDP_DEV_KeyTab?" promptNeeded="false" type="id_String" value="/home/apps_dev/apps_dev.keytab"/>
+  <contextParameter xmi:id="_g1NS2wNKEempO5IgaSiASw" comment="" name="HDP_DEV_JobHistory" prompt="HDP_DEV_JobHistory?" promptNeeded="false" type="id_String" value="hdd1-tms0002.office.corp.indosat.com:10020"/>
 </talendfile:ContextType>

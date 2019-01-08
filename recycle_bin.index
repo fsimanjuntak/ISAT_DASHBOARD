@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2018-12-13T22:23:52.347+0700">
-  <deletedItems id="_Ql6YIPaxEeiBTqjAz6A9mg" path="DASHBOARD_ENHANCEMENT/PD_SMY/PD_SMY_MOBOORGANIC" type="PROCESS"/>
+<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2018-12-26T11:47:14.891+0700">
   <deletedItems id="_0mU8QPkrEeiQ_sK70mmQbQ" path="" type="ROUTINES"/>
   <deletedItems id="_CueB0PkPEeiQ_sK70mmQbQ" path="DASHBOARD_ENHANCEMENT/PD_SMY/PD_SMY_RDP" type="PROCESS"/>
+  <deletedItems id="_Ql6YIPaxEeiBTqjAz6A9mg" path="DASHBOARD_ENHANCEMENT/PD_SMY/PD_SMY_RDP" type="PROCESS"/>
+  <deletedItems id="_nzGPkP74EeiOhscGsDLlcA" path="DASHBOARD_ENHANCEMENT/PD_POSTPAID" type="PROCESS_MR"/>
+  <deletedItems id="_2kZMkP7rEeiOhscGsDLlcA" path="DASHBOARD_ENHANCEMENT/PD_POSTPAID" type="PROCESS_MR"/>
+  <deletedItems id="_7s63AAKYEem3rPHrfrak3Q" path="DASHBOARD_ENHANCEMENT/PD_SMY_RDP" type="PROCESS"/>
+  <deletedItems id="_eVQg0AUGEem1o7bQwPy_7A" path="DASHBOARD_ENHANCEMENT/PD_POSTPAID" type="PROCESS_MR"/>
 </recyclebin:RecycleBin>

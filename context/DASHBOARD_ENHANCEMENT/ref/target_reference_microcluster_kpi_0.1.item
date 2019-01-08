@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
-  <talendfile:ContextType xmi:id="_tGYi0PIuEei04LlwpOmL_w" confirmationNeeded="false" name="Default">
-    <contextParameter xmi:id="_tGYi0fIuEei04LlwpOmL_w" comment="" name="SOURCE_DIR" prompt="SOURCE_DIR?" promptNeeded="false" type="id_String" value="&quot;/home/apps_dev/target_ref/&quot;"/>
-    <contextParameter xmi:id="_tGYi0vIuEei04LlwpOmL_w" comment="" name="LOGGED_DIR" prompt="LOGGED_DIR?" promptNeeded="false" type="id_String" value="&quot;/home/apps_dev/target_ref/logged&quot;"/>
-    <contextParameter xmi:id="_tGYi0_IuEei04LlwpOmL_w" comment="" name="HDFS_RAW_DIR" prompt="HDFS_RAW_DIR?" promptNeeded="false" type="id_String" value="&quot;/user/apps_dev/target_ref/collection/&quot;"/>
-    <contextParameter xmi:id="_tGYi1PIuEei04LlwpOmL_w" comment="" name="PATTERN_FILE_NAME" prompt="PATTERN_FILE_NAME?" promptNeeded="false" type="id_String" value="&quot;TARGET_REF.txt&quot;"/>
-    <contextParameter xmi:id="_tGYi1fIuEei04LlwpOmL_w" comment="" name="PRC_TP" prompt="PRC_TP?" promptNeeded="false" type="id_String" value="&quot;REF&quot;"/>
-    <contextParameter xmi:id="_tGYi1vIuEei04LlwpOmL_w" comment="" name="TARGET_SCHEMA" prompt="TARGET_SCHEMA?" promptNeeded="false" type="id_String" value="&quot;SOR&quot;"/>
-    <contextParameter xmi:id="_tGYi1_IuEei04LlwpOmL_w" comment="" name="TARGET_TABLE" prompt="TARGET_TABLE?" promptNeeded="false" type="id_String" value="&quot;PD_TARGET_REF&quot;"/>
+  <talendfile:ContextType xmi:id="_g0m14ANKEempO5IgaSiASw" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_g0m14QNKEempO5IgaSiASw" comment="" name="SOURCE_DIR" prompt="SOURCE_DIR?" promptNeeded="false" type="id_String" value="&quot;/home/apps_dev/target_ref/&quot;"/>
+    <contextParameter xmi:id="_g0m14gNKEempO5IgaSiASw" comment="" name="LOGGED_DIR" prompt="LOGGED_DIR?" promptNeeded="false" type="id_String" value="&quot;/home/apps_dev/target_ref/logged&quot;"/>
+    <contextParameter xmi:id="_g0m14wNKEempO5IgaSiASw" comment="" name="HDFS_RAW_DIR" prompt="HDFS_RAW_DIR?" promptNeeded="false" type="id_String" value="&quot;/user/apps_dev/target_ref/collection/&quot;"/>
+    <contextParameter xmi:id="_g0m15ANKEempO5IgaSiASw" comment="" name="PATTERN_FILE_NAME" prompt="PATTERN_FILE_NAME?" promptNeeded="false" type="id_String" value="&quot;TARGET_REF.txt&quot;"/>
+    <contextParameter xmi:id="_g0m15QNKEempO5IgaSiASw" comment="" name="PRC_TP" prompt="PRC_TP?" promptNeeded="false" type="id_String" value="&quot;REF&quot;"/>
+    <contextParameter xmi:id="_g0m15gNKEempO5IgaSiASw" comment="" name="TARGET_SCHEMA" prompt="TARGET_SCHEMA?" promptNeeded="false" type="id_String" value="&quot;SOR&quot;"/>
+    <contextParameter xmi:id="_g0m15wNKEempO5IgaSiASw" comment="" name="TARGET_TABLE" prompt="TARGET_TABLE?" promptNeeded="false" type="id_String" value="&quot;PD_TARGET_REF&quot;"/>
   </talendfile:ContextType>
-  <talendfile:ContextType xmi:id="_tGYi2PIuEei04LlwpOmL_w" confirmationNeeded="false" name="DEV">
-    <contextParameter xmi:id="_tGYi2fIuEei04LlwpOmL_w" comment="" name="SOURCE_DIR" prompt="SOURCE_DIR?" promptNeeded="false" type="id_String" value="&quot;/home/apps_dev/target_ref/&quot;"/>
-    <contextParameter xmi:id="_tGYi2vIuEei04LlwpOmL_w" comment="" name="LOGGED_DIR" prompt="LOGGED_DIR?" promptNeeded="false" type="id_String" value="&quot;/home/apps_dev/target_ref/logged&quot;"/>
-    <contextParameter xmi:id="_tGYi2_IuEei04LlwpOmL_w" comment="" name="HDFS_RAW_DIR" prompt="HDFS_RAW_DIR?" promptNeeded="false" type="id_String" value="&quot;/user/apps_dev/target_ref/collection/&quot;"/>
-    <contextParameter xmi:id="_tGYi3PIuEei04LlwpOmL_w" comment="" name="PATTERN_FILE_NAME" prompt="PATTERN_FILE_NAME?" promptNeeded="false" type="id_String" value="&quot;TARGET_REF.txt&quot;"/>
-    <contextParameter xmi:id="_tGYi3fIuEei04LlwpOmL_w" comment="" name="PRC_TP" prompt="PRC_TP?" promptNeeded="false" type="id_String" value="&quot;REF&quot;"/>
-    <contextParameter xmi:id="_tGYi3vIuEei04LlwpOmL_w" comment="" name="TARGET_SCHEMA" prompt="TARGET_SCHEMA?" promptNeeded="false" type="id_String" value="&quot;SOR&quot;"/>
-    <contextParameter xmi:id="_tGYi3_IuEei04LlwpOmL_w" comment="" name="TARGET_TABLE" prompt="TARGET_TABLE?" promptNeeded="false" type="id_String" value="&quot;PD_TARGET_REF&quot;"/>
+  <talendfile:ContextType xmi:id="_g0m16ANKEempO5IgaSiASw" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_g0m16QNKEempO5IgaSiASw" comment="" name="SOURCE_DIR" prompt="SOURCE_DIR?" promptNeeded="false" type="id_String" value="&quot;/home/apps_dev/target_ref/&quot;"/>
+    <contextParameter xmi:id="_g0m16gNKEempO5IgaSiASw" comment="" name="LOGGED_DIR" prompt="LOGGED_DIR?" promptNeeded="false" type="id_String" value="&quot;/home/apps_dev/target_ref/logged&quot;"/>
+    <contextParameter xmi:id="_g0m16wNKEempO5IgaSiASw" comment="" name="HDFS_RAW_DIR" prompt="HDFS_RAW_DIR?" promptNeeded="false" type="id_String" value="&quot;/user/apps_dev/target_ref/collection/&quot;"/>
+    <contextParameter xmi:id="_g0m17ANKEempO5IgaSiASw" comment="" name="PATTERN_FILE_NAME" prompt="PATTERN_FILE_NAME?" promptNeeded="false" type="id_String" value="&quot;TARGET_REF.txt&quot;"/>
+    <contextParameter xmi:id="_g0m17QNKEempO5IgaSiASw" comment="" name="PRC_TP" prompt="PRC_TP?" promptNeeded="false" type="id_String" value="&quot;REF&quot;"/>
+    <contextParameter xmi:id="_g0m17gNKEempO5IgaSiASw" comment="" name="TARGET_SCHEMA" prompt="TARGET_SCHEMA?" promptNeeded="false" type="id_String" value="&quot;SOR&quot;"/>
+    <contextParameter xmi:id="_g0m17wNKEempO5IgaSiASw" comment="" name="TARGET_TABLE" prompt="TARGET_TABLE?" promptNeeded="false" type="id_String" value="&quot;PD_TARGET_REF&quot;"/>
   </talendfile:ContextType>
-  <talendfile:ContextType xmi:id="_tGYi4PIuEei04LlwpOmL_w" confirmationNeeded="false" name="PRD">
-    <contextParameter xmi:id="_tGYi4fIuEei04LlwpOmL_w" comment="" name="SOURCE_DIR" prompt="SOURCE_DIR?" promptNeeded="false" type="id_String" value="&quot;/apps/data1/source/pd_dashboard/target_ref&quot;"/>
-    <contextParameter xmi:id="_tGYi4vIuEei04LlwpOmL_w" comment="" name="LOGGED_DIR" prompt="LOGGED_DIR?" promptNeeded="false" type="id_String" value="&quot;/apps/data1/source/pd_dashboard/target_ref/logged&quot;"/>
-    <contextParameter xmi:id="_tGYi4_IuEei04LlwpOmL_w" comment="" name="HDFS_RAW_DIR" prompt="HDFS_RAW_DIR?" promptNeeded="false" type="id_String" value="&quot;/user/hdp-rev/spark/pd_dashboard/collection/target_ref&quot;"/>
-    <contextParameter xmi:id="_tGYi5PIuEei04LlwpOmL_w" comment="" name="PATTERN_FILE_NAME" prompt="PATTERN_FILE_NAME?" promptNeeded="false" type="id_String" value="&quot;TARGET_REF.txt&quot;"/>
-    <contextParameter xmi:id="_tGYi5fIuEei04LlwpOmL_w" comment="" name="PRC_TP" prompt="PRC_TP?" promptNeeded="false" type="id_String" value="&quot;REF&quot;"/>
-    <contextParameter xmi:id="_tGYi5vIuEei04LlwpOmL_w" comment="" name="TARGET_SCHEMA" prompt="TARGET_SCHEMA?" promptNeeded="false" type="id_String" value="&quot;SOR&quot;"/>
-    <contextParameter xmi:id="_tGYi5_IuEei04LlwpOmL_w" comment="" name="TARGET_TABLE" prompt="TARGET_TABLE?" promptNeeded="false" type="id_String" value="&quot;PD_TARGET_REF&quot;"/>
+  <talendfile:ContextType xmi:id="_g0m18ANKEempO5IgaSiASw" confirmationNeeded="false" name="PRD">
+    <contextParameter xmi:id="_g0m18QNKEempO5IgaSiASw" comment="" name="SOURCE_DIR" prompt="SOURCE_DIR?" promptNeeded="false" type="id_String" value="&quot;/apps/data1/source/pd_dashboard/target_ref&quot;"/>
+    <contextParameter xmi:id="_g0m18gNKEempO5IgaSiASw" comment="" name="LOGGED_DIR" prompt="LOGGED_DIR?" promptNeeded="false" type="id_String" value="&quot;/apps/data1/source/pd_dashboard/target_ref/logged&quot;"/>
+    <contextParameter xmi:id="_g0m18wNKEempO5IgaSiASw" comment="" name="HDFS_RAW_DIR" prompt="HDFS_RAW_DIR?" promptNeeded="false" type="id_String" value="&quot;/user/hdp-rev/spark/pd_dashboard/collection/target_ref&quot;"/>
+    <contextParameter xmi:id="_g0m19ANKEempO5IgaSiASw" comment="" name="PATTERN_FILE_NAME" prompt="PATTERN_FILE_NAME?" promptNeeded="false" type="id_String" value="&quot;TARGET_REF.txt&quot;"/>
+    <contextParameter xmi:id="_g0m19QNKEempO5IgaSiASw" comment="" name="PRC_TP" prompt="PRC_TP?" promptNeeded="false" type="id_String" value="&quot;REF&quot;"/>
+    <contextParameter xmi:id="_g0m19gNKEempO5IgaSiASw" comment="" name="TARGET_SCHEMA" prompt="TARGET_SCHEMA?" promptNeeded="false" type="id_String" value="&quot;SOR&quot;"/>
+    <contextParameter xmi:id="_g0m19wNKEempO5IgaSiASw" comment="" name="TARGET_TABLE" prompt="TARGET_TABLE?" promptNeeded="false" type="id_String" value="&quot;PD_TARGET_REF&quot;"/>
   </talendfile:ContextType>
-  <talendfile:ContextType xmi:id="_tGYi6PIuEei04LlwpOmL_w" confirmationNeeded="false" name="UAT">
-    <contextParameter xmi:id="_tGYi6fIuEei04LlwpOmL_w" comment="" name="SOURCE_DIR" prompt="SOURCE_DIR?" promptNeeded="false" type="id_String" value="&quot;/home/apps_dev/target_ref/&quot;"/>
-    <contextParameter xmi:id="_tGYi6vIuEei04LlwpOmL_w" comment="" name="LOGGED_DIR" prompt="LOGGED_DIR?" promptNeeded="false" type="id_String" value="&quot;/home/apps_dev/target_ref/logged&quot;"/>
-    <contextParameter xmi:id="_tGYi6_IuEei04LlwpOmL_w" comment="" name="HDFS_RAW_DIR" prompt="HDFS_RAW_DIR?" promptNeeded="false" type="id_String" value="&quot;/user/apps_dev/target_ref/collection/&quot;"/>
-    <contextParameter xmi:id="_tGYi7PIuEei04LlwpOmL_w" comment="" name="PATTERN_FILE_NAME" prompt="PATTERN_FILE_NAME?" promptNeeded="false" type="id_String" value="&quot;TARGET_REF.txt&quot;"/>
-    <contextParameter xmi:id="_tGYi7fIuEei04LlwpOmL_w" comment="" name="PRC_TP" prompt="PRC_TP?" promptNeeded="false" type="id_String" value="&quot;REF&quot;"/>
-    <contextParameter xmi:id="_tGYi7vIuEei04LlwpOmL_w" comment="" name="TARGET_SCHEMA" prompt="TARGET_SCHEMA?" promptNeeded="false" type="id_String" value="&quot;SOR&quot;"/>
-    <contextParameter xmi:id="_tGYi7_IuEei04LlwpOmL_w" comment="" name="TARGET_TABLE" prompt="TARGET_TABLE?" promptNeeded="false" type="id_String" value="&quot;PD_TARGET_REF&quot;"/>
+  <talendfile:ContextType xmi:id="_g0m1-ANKEempO5IgaSiASw" confirmationNeeded="false" name="UAT">
+    <contextParameter xmi:id="_g0m1-QNKEempO5IgaSiASw" comment="" name="SOURCE_DIR" prompt="SOURCE_DIR?" promptNeeded="false" type="id_String" value="&quot;/home/apps_dev/target_ref/&quot;"/>
+    <contextParameter xmi:id="_g0m1-gNKEempO5IgaSiASw" comment="" name="LOGGED_DIR" prompt="LOGGED_DIR?" promptNeeded="false" type="id_String" value="&quot;/home/apps_dev/target_ref/logged&quot;"/>
+    <contextParameter xmi:id="_g0m1-wNKEempO5IgaSiASw" comment="" name="HDFS_RAW_DIR" prompt="HDFS_RAW_DIR?" promptNeeded="false" type="id_String" value="&quot;/user/apps_dev/target_ref/collection/&quot;"/>
+    <contextParameter xmi:id="_g0m1_ANKEempO5IgaSiASw" comment="" name="PATTERN_FILE_NAME" prompt="PATTERN_FILE_NAME?" promptNeeded="false" type="id_String" value="&quot;TARGET_REF.txt&quot;"/>
+    <contextParameter xmi:id="_g0m1_QNKEempO5IgaSiASw" comment="" name="PRC_TP" prompt="PRC_TP?" promptNeeded="false" type="id_String" value="&quot;REF&quot;"/>
+    <contextParameter xmi:id="_g0m1_gNKEempO5IgaSiASw" comment="" name="TARGET_SCHEMA" prompt="TARGET_SCHEMA?" promptNeeded="false" type="id_String" value="&quot;SOR&quot;"/>
+    <contextParameter xmi:id="_g0m1_wNKEempO5IgaSiASw" comment="" name="TARGET_TABLE" prompt="TARGET_TABLE?" promptNeeded="false" type="id_String" value="&quot;PD_TARGET_REF&quot;"/>
   </talendfile:ContextType>
 </xmi:XMI>

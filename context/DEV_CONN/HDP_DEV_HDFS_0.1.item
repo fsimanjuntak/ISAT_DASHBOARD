@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
-  <talendfile:ContextType xmi:id="_tHR6sPIuEei04LlwpOmL_w" confirmationNeeded="false" name="Default">
-    <contextParameter xmi:id="_tHR6sfIuEei04LlwpOmL_w" comment="" name="HDP_DEV_HDFS_HdfsFileSeparator" prompt="HDP_DEV_HDFS_HdfsFileSeparator?" promptNeeded="false" type="id_String" value="&quot;;&quot;"/>
-    <contextParameter xmi:id="_tHR6svIuEei04LlwpOmL_w" comment="" name="HDP_DEV_HDFS_HdfsRowSeparator" prompt="HDP_DEV_HDFS_HdfsRowSeparator?" promptNeeded="false" type="id_String" value="&quot;\n&quot;"/>
+  <talendfile:ContextType xmi:id="_g1XD0ANKEempO5IgaSiASw" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_g1XD0QNKEempO5IgaSiASw" comment="" name="HDP_DEV_HDFS_HdfsFileSeparator" prompt="HDP_DEV_HDFS_HdfsFileSeparator?" promptNeeded="false" type="id_String" value="&quot;;&quot;"/>
+    <contextParameter xmi:id="_g1XD0gNKEempO5IgaSiASw" comment="" name="HDP_DEV_HDFS_HdfsRowSeparator" prompt="HDP_DEV_HDFS_HdfsRowSeparator?" promptNeeded="false" type="id_String" value="&quot;\n&quot;"/>
   </talendfile:ContextType>
-  <talendfile:ContextType xmi:id="_tHR6s_IuEei04LlwpOmL_w" confirmationNeeded="false" name="DEV">
-    <contextParameter xmi:id="_tHR6tPIuEei04LlwpOmL_w" comment="" name="HDP_DEV_HDFS_HdfsFileSeparator" prompt="HDP_DEV_HDFS_HdfsFileSeparator?" promptNeeded="false" type="id_String" value="&quot;;&quot;"/>
-    <contextParameter xmi:id="_tHR6tfIuEei04LlwpOmL_w" comment="" name="HDP_DEV_HDFS_HdfsRowSeparator" prompt="HDP_DEV_HDFS_HdfsRowSeparator?" promptNeeded="false" type="id_String" value="&quot;\n&quot;"/>
+  <talendfile:ContextType xmi:id="_g1XD0wNKEempO5IgaSiASw" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_g1XD1ANKEempO5IgaSiASw" comment="" name="HDP_DEV_HDFS_HdfsFileSeparator" prompt="HDP_DEV_HDFS_HdfsFileSeparator?" promptNeeded="false" type="id_String" value="&quot;;&quot;"/>
+    <contextParameter xmi:id="_g1XD1QNKEempO5IgaSiASw" comment="" name="HDP_DEV_HDFS_HdfsRowSeparator" prompt="HDP_DEV_HDFS_HdfsRowSeparator?" promptNeeded="false" type="id_String" value="&quot;\n&quot;"/>
   </talendfile:ContextType>
-  <talendfile:ContextType xmi:id="_tHR6tvIuEei04LlwpOmL_w" confirmationNeeded="false" name="PRD">
-    <contextParameter xmi:id="_tHR6t_IuEei04LlwpOmL_w" comment="" name="HDP_DEV_HDFS_HdfsFileSeparator" prompt="HDP_DEV_HDFS_HdfsFileSeparator?" promptNeeded="false" type="id_String" value="&quot;;&quot;"/>
-    <contextParameter xmi:id="_tHR6uPIuEei04LlwpOmL_w" comment="" name="HDP_DEV_HDFS_HdfsRowSeparator" prompt="HDP_DEV_HDFS_HdfsRowSeparator?" promptNeeded="false" type="id_String" value="&quot;\n&quot;"/>
+  <talendfile:ContextType xmi:id="_g1XD1gNKEempO5IgaSiASw" confirmationNeeded="false" name="PRD">
+    <contextParameter xmi:id="_g1XD1wNKEempO5IgaSiASw" comment="" name="HDP_DEV_HDFS_HdfsFileSeparator" prompt="HDP_DEV_HDFS_HdfsFileSeparator?" promptNeeded="false" type="id_String" value="&quot;;&quot;"/>
+    <contextParameter xmi:id="_g1XD2ANKEempO5IgaSiASw" comment="" name="HDP_DEV_HDFS_HdfsRowSeparator" prompt="HDP_DEV_HDFS_HdfsRowSeparator?" promptNeeded="false" type="id_String" value="&quot;\n&quot;"/>
   </talendfile:ContextType>
-  <talendfile:ContextType xmi:id="_tHR6ufIuEei04LlwpOmL_w" confirmationNeeded="false" name="UAT">
-    <contextParameter xmi:id="_tHR6uvIuEei04LlwpOmL_w" comment="" name="HDP_DEV_HDFS_HdfsFileSeparator" prompt="HDP_DEV_HDFS_HdfsFileSeparator?" promptNeeded="false" type="id_String" value="&quot;;&quot;"/>
-    <contextParameter xmi:id="_tHR6u_IuEei04LlwpOmL_w" comment="" name="HDP_DEV_HDFS_HdfsRowSeparator" prompt="HDP_DEV_HDFS_HdfsRowSeparator?" promptNeeded="false" type="id_String" value="&quot;\n&quot;"/>
+  <talendfile:ContextType xmi:id="_g1XD2QNKEempO5IgaSiASw" confirmationNeeded="false" name="UAT">
+    <contextParameter xmi:id="_g1XD2gNKEempO5IgaSiASw" comment="" name="HDP_DEV_HDFS_HdfsFileSeparator" prompt="HDP_DEV_HDFS_HdfsFileSeparator?" promptNeeded="false" type="id_String" value="&quot;;&quot;"/>
+    <contextParameter xmi:id="_g1XD2wNKEempO5IgaSiASw" comment="" name="HDP_DEV_HDFS_HdfsRowSeparator" prompt="HDP_DEV_HDFS_HdfsRowSeparator?" promptNeeded="false" type="id_String" value="&quot;\n&quot;"/>
   </talendfile:ContextType>
 </xmi:XMI>

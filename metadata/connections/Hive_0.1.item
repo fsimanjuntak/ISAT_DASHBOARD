@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TalendMetadata:DatabaseConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmi:id="_zaZw0ARREemFHZGjW5mNNg" name="Hive" id="_j4FScARREemFHZGjW5mNNg" label="Hive" DatabaseType="Hive" DriverClass="org.apache.hadoop.hive.jdbc.HiveDriver" URL="jdbc:hive2://hdp1-dms0002.office.corp.indosat.com:10000/default;principal=hive/_HOST@OFFICE.CORP.INDOSAT.COM" dbVersionString="STANDALONE" Port="10000" Username="" Password="" ServerName="hdp1-dms0002.office.corp.indosat.com" SID="default" SqlSynthax="SQL Syntax" DbmsId="hive_id" ProductId="HIVE" StandardSQL="true">
+  <taggedValue xmi:id="_zaZw0QRREemFHZGjW5mNNg" tag="Is Conn Need Reload" value="false"/>
+  <taggedValue xmi:id="_za2cwARREemFHZGjW5mNNg" tag="package filter" value=""/>
+  <taggedValue xmi:id="_zbJXsARREemFHZGjW5mNNg" tag="Status" value=""/>
+  <taggedValue xmi:id="_zbJXsQRREemFHZGjW5mNNg" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_zbJXsgRREemFHZGjW5mNNg" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_zbJXswRREemFHZGjW5mNNg" tag="Description" value=""/>
+  <taggedValue xmi:id="_zbJXtARREemFHZGjW5mNNg" tag="Author" value=""/>
+  <taggedValue xmi:id="_zbJXtQRREemFHZGjW5mNNg" tag="otherParameter"/>
+  <parameters xmi:id="_zaZw0gRREemFHZGjW5mNNg" key="CONN_PARA_KEY_DB_PORT"/>
+  <parameters xmi:id="_zaZw0wRREemFHZGjW5mNNg" key="CONN_PARA_KEY_USE_YARN" value="true"/>
+  <parameters xmi:id="_zaZw1ARREemFHZGjW5mNNg" key="CONN_PARA_KEY_RESOURCEMANAGER_SCHEDULER_ADDRESS" value="hdp1-dms0001.office.corp.indosat.com:8030"/>
+  <parameters xmi:id="_zaZw1QRREemFHZGjW5mNNg" key="CONN_PARA_KEY_USEKEYTAB" value="true"/>
+  <parameters xmi:id="_zaZw1gRREemFHZGjW5mNNg" key="CONN_PARA_KEY_USE_CUSTOM_CONFS" value="true"/>
+  <parameters xmi:id="_zaZw1wRREemFHZGjW5mNNg" key="CONN_PARA_KEY_NAME_NODE_URL" value="hdfs://nameservice1"/>
+  <parameters xmi:id="_zaZw2ARREemFHZGjW5mNNg" key="CONN_PARA_KEY_USERNAME" value=""/>
+  <parameters xmi:id="_zaZw2QRREemFHZGjW5mNNg" key="CONN_PARA_KEY_HADOOP_CLUSTER_ID" value="_AqjNsARREemFHZGjW5mNNg"/>
+  <parameters xmi:id="_zaZw2gRREemFHZGjW5mNNg" key="CONN_PARA_KEY_JOB_HISTORY_PRINCIPAL" value="mapred/_HOST@OFFICE.CORP.INDOSAT.COM"/>
+  <parameters xmi:id="_zaZw2wRREemFHZGjW5mNNg" key="CONN_PARA_KEY_HBASE_VERSION" value="Cloudera_CDH5_8"/>
+  <parameters xmi:id="_zaZw3ARREemFHZGjW5mNNg" key="CONN_PARA_KEY_JOB_TRACKER_URL" value="hdp1-dms0001.office.corp.indosat.com:8032"/>
+  <parameters xmi:id="_zaZw3QRREemFHZGjW5mNNg" key="CONN_PARA_KEY_JOBHISTORY_ADDRESS" value="hdp1-dms0002.office.corp.indosat.com:10020"/>
+  <parameters xmi:id="_zaZw3gRREemFHZGjW5mNNg" key="CONN_PARA_KEY_HIVE_VERSION" value="Cloudera_CDH5_8"/>
+  <parameters xmi:id="_zaZw3wRREemFHZGjW5mNNg" key="CONN_PARA_KEY_USE_DATANODE_HOSTNAME" value="true"/>
+  <parameters xmi:id="_zaZw4ARREemFHZGjW5mNNg" key="CONN_PARA_KEY_DB_SERVER" value="nameservice1"/>
+  <parameters xmi:id="_zaZw4QRREemFHZGjW5mNNg" key="CONN_PARA_KEY_DB_TYPE" value="Hive"/>
+  <parameters xmi:id="_zaZw4gRREemFHZGjW5mNNg" key="CONN_PARA_KEY_MAPRDB_AUTHENTICATION_USE_MAPRTICKET" value="false"/>
+  <parameters xmi:id="_zaZw4wRREemFHZGjW5mNNg" key="CONN_PARA_KEY_JOB_TRACKER_PRINCIPAL" value="yarn/_HOST@OFFICE.CORP.INDOSAT.COM"/>
+  <parameters xmi:id="_zaZw5ARREemFHZGjW5mNNg" key="CONN_PARA_KEY_HIVE_DISTRIBUTION" value="CLOUDERA"/>
+  <parameters xmi:id="_zaZw5QRREemFHZGjW5mNNg" key="CONN_PARA_KEY_MAPRDB_VERSION" value="Cloudera_CDH5_8"/>
+  <parameters xmi:id="_zaZw5gRREemFHZGjW5mNNg" key="CONN_PARA_KEY_KEYTAB_PRINCIPLA" value="hdp-rev@OFFICE.CORP.INDOSAT.COM"/>
+  <parameters xmi:id="_zaZw5wRREemFHZGjW5mNNg" key="CONN_PARA_KEY_MAPRDB_DISTRIBUTION" value="CLOUDERA"/>
+  <parameters xmi:id="_zaZw6ARREemFHZGjW5mNNg" key="CONN_PARA_KEY_USE_KRB" value="true"/>
+  <parameters xmi:id="_zaZw6QRREemFHZGjW5mNNg" key="CONN_PARA_KEY_HBASE_DISTRIBUTION" value="CLOUDERA"/>
+  <parameters xmi:id="_zaZw6gRREemFHZGjW5mNNg" key="CONN_PARA_KEY_STAGING_DIRECTORY" value="/user"/>
+  <parameters xmi:id="_zaZw6wRREemFHZGjW5mNNg" key="CONN_PARA_KEY_HADOOP_CUSTOM_JARS"/>
+  <parameters xmi:id="_zaZw7ARREemFHZGjW5mNNg" key="CONN_PARA_KEY_NAME_NODE_PRINCIPAL" value="hdfs/_HOST@OFFICE.CORP.INDOSAT.COM"/>
+  <parameters xmi:id="_zaZw7QRREemFHZGjW5mNNg" key="CONN_PARA_KEY_DB_PRODUCT" value="HIVE"/>
+  <parameters xmi:id="_zaZw7gRREemFHZGjW5mNNg" key="CONN_PARA_KEY_KEYTAB" value="/home/hdp-rev/hdp-rev.keytab"/>
+  <parameters xmi:id="_zaZw7wRREemFHZGjW5mNNg" key="CONN_PARA_KEY_HIVE_AUTHENTICATION_USE_MAPRTICKET" value="false"/>
+  <parameters xmi:id="_zaZw8ARREemFHZGjW5mNNg" key="CONN_PARA_KEY_HBASE_AUTHENTICATION_USE_MAPRTICKET" value="false"/>
+  <parameters xmi:id="_zaZw8QRREemFHZGjW5mNNg" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+  <parameters xmi:id="_zaZw8gRREemFHZGjW5mNNg" key="CONN_PARA_KEY_HIVE_MODE" value="STANDALONE"/>
+  <parameters xmi:id="_zaZw8wRREemFHZGjW5mNNg" key="HIVE_SERVER_VERSION" value="HIVE2"/>
+  <parameters xmi:id="_zaZw9ARREemFHZGjW5mNNg" key="HIVE_AUTHENTICATION_HIVEPRINCIPLA" value="hive/_HOST@OFFICE.CORP.INDOSAT.COM"/>
+  <parameters xmi:id="_zaZw9QRREemFHZGjW5mNNg" key="HIVE_AUTHENTICATION_METASTOREURL" value=""/>
+  <parameters xmi:id="_zaZw9gRREemFHZGjW5mNNg" key="HIVE_AUTHENTICATION_DRIVERCLASS" value=""/>
+  <parameters xmi:id="_zaZw9wRREemFHZGjW5mNNg" key="HIVE_AUTHENTICATION_USERNAME" value=""/>
+  <parameters xmi:id="_zaZw-ARREemFHZGjW5mNNg" key="HIVE_AUTHENTICATION_PASSWORD" value=""/>
+  <parameters xmi:id="_zaZw-QRREemFHZGjW5mNNg" key="HIVE_EXECUTION_ENGINE"/>
+  <parameters xmi:id="_zaZw-gRREemFHZGjW5mNNg" key="CONN_PARA_KEY_USE_SSL" value="false"/>
+  <parameters xmi:id="_zaZw-wRREemFHZGjW5mNNg" key="CONN_PARA_KEY_SSL_TRUST_STORE_PATH" value=""/>
+  <parameters xmi:id="_zaZw_ARREemFHZGjW5mNNg" key="CONN_PARA_KEY_SSL_TRUST_STORE_PASSWORD" value=""/>
+</TalendMetadata:DatabaseConnection>

@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
-  <talendfile:ContextType xmi:id="_tFMQAPIuEei04LlwpOmL_w" confirmationNeeded="false" name="Default">
-    <contextParameter xmi:id="_tFMQAfIuEei04LlwpOmL_w" comment="" name="HDP_PRD_JTOrRMPrin" prompt="HDP_PRD_JTOrRMPrin?" promptNeeded="false" type="id_String" value="yarn/_HOST@OFFICE.CORP.INDOSAT.COM"/>
-    <contextParameter xmi:id="_tFMQAvIuEei04LlwpOmL_w" comment="" name="HDP_PRD_JobHistory" prompt="HDP_PRD_JobHistory?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:10020"/>
-    <contextParameter xmi:id="_tFMQA_IuEei04LlwpOmL_w" comment="" name="HDP_PRD_NameNodeUri" prompt="HDP_PRD_NameNodeUri?" promptNeeded="false" type="id_String" value="hdfs://nameservice1"/>
-    <contextParameter xmi:id="_tFMQBPIuEei04LlwpOmL_w" comment="" name="HDP_PRD_StagingDirectory" prompt="HDP_PRD_StagingDirectory?" promptNeeded="false" type="id_String" value="/user"/>
-    <contextParameter xmi:id="_tFMQBfIuEei04LlwpOmL_w" comment="" name="HDP_PRD_ResourceManagerScheduler" prompt="HDP_PRD_ResourceManagerScheduler?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:8030"/>
-    <contextParameter xmi:id="_tFMQBvIuEei04LlwpOmL_w" comment="" name="HDP_PRD_ResourceManager" prompt="HDP_PRD_ResourceManager?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:8032"/>
-    <contextParameter xmi:id="_tFMQB_IuEei04LlwpOmL_w" comment="" name="HDP_PRD_NameNodePrin" prompt="HDP_PRD_NameNodePrin?" promptNeeded="false" type="id_String" value="hdfs://nameservice1"/>
-    <contextParameter xmi:id="_tFMQCPIuEei04LlwpOmL_w" comment="" name="HDP_PRD_JobHistroyPrin" prompt="HDP_PRD_JobHistroyPrin?" promptNeeded="false" type="id_String" value="mapred/${yarn.resourcemanager.hostname}"/>
-    <contextParameter xmi:id="_tFMQCfIuEei04LlwpOmL_w" comment="" name="HDP_PRD_KeyTab" prompt="HDP_PRD_KeyTab?" promptNeeded="false" type="id_String" value="/home/hdp-rev/hdp-rev.keytab"/>
-    <contextParameter xmi:id="_tFMQCvIuEei04LlwpOmL_w" comment="" name="HDP_PRD_Principal" prompt="HDP_PRD_Principal?" promptNeeded="false" type="id_String" value="hdp-rev@OFFICE.CORP.INDOSAT.COM"/>
+  <talendfile:ContextType xmi:id="_gy-eMANKEempO5IgaSiASw" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_gy-eMQNKEempO5IgaSiASw" comment="" name="HDP_PRD_JTOrRMPrin" prompt="HDP_PRD_JTOrRMPrin?" promptNeeded="false" type="id_String" value="yarn/_HOST@OFFICE.CORP.INDOSAT.COM"/>
+    <contextParameter xmi:id="_gy-eMgNKEempO5IgaSiASw" comment="" name="HDP_PRD_JobHistory" prompt="HDP_PRD_JobHistory?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:10020"/>
+    <contextParameter xmi:id="_gy-eMwNKEempO5IgaSiASw" comment="" name="HDP_PRD_NameNodeUri" prompt="HDP_PRD_NameNodeUri?" promptNeeded="false" type="id_String" value="hdfs://nameservice1"/>
+    <contextParameter xmi:id="_gy-eNANKEempO5IgaSiASw" comment="" name="HDP_PRD_StagingDirectory" prompt="HDP_PRD_StagingDirectory?" promptNeeded="false" type="id_String" value="/user"/>
+    <contextParameter xmi:id="_gy-eNQNKEempO5IgaSiASw" comment="" name="HDP_PRD_ResourceManagerScheduler" prompt="HDP_PRD_ResourceManagerScheduler?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:8030"/>
+    <contextParameter xmi:id="_gy-eNgNKEempO5IgaSiASw" comment="" name="HDP_PRD_ResourceManager" prompt="HDP_PRD_ResourceManager?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:8032"/>
+    <contextParameter xmi:id="_gy-eNwNKEempO5IgaSiASw" comment="" name="HDP_PRD_NameNodePrin" prompt="HDP_PRD_NameNodePrin?" promptNeeded="false" type="id_String" value="hdfs://nameservice1"/>
+    <contextParameter xmi:id="_gy-eOANKEempO5IgaSiASw" comment="" name="HDP_PRD_JobHistroyPrin" prompt="HDP_PRD_JobHistroyPrin?" promptNeeded="false" type="id_String" value="mapred/${yarn.resourcemanager.hostname}"/>
+    <contextParameter xmi:id="_gy-eOQNKEempO5IgaSiASw" comment="" name="HDP_PRD_KeyTab" prompt="HDP_PRD_KeyTab?" promptNeeded="false" type="id_String" value="/home/hdp-rev/hdp-rev.keytab"/>
+    <contextParameter xmi:id="_gy-eOgNKEempO5IgaSiASw" comment="" name="HDP_PRD_Principal" prompt="HDP_PRD_Principal?" promptNeeded="false" type="id_String" value="hdp-rev@OFFICE.CORP.INDOSAT.COM"/>
   </talendfile:ContextType>
-  <talendfile:ContextType xmi:id="_tFMQC_IuEei04LlwpOmL_w" confirmationNeeded="false" name="DEV">
-    <contextParameter xmi:id="_tFMQDPIuEei04LlwpOmL_w" comment="" name="HDP_PRD_JTOrRMPrin" prompt="HDP_PRD_JTOrRMPrin?" promptNeeded="false" type="id_String" value="yarn/_HOST@OFFICE.CORP.INDOSAT.COM"/>
-    <contextParameter xmi:id="_tFMQDfIuEei04LlwpOmL_w" comment="" name="HDP_PRD_JobHistory" prompt="HDP_PRD_JobHistory?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:10020"/>
-    <contextParameter xmi:id="_tFMQDvIuEei04LlwpOmL_w" comment="" name="HDP_PRD_NameNodeUri" prompt="HDP_PRD_NameNodeUri?" promptNeeded="false" type="id_String" value="hdfs://testnameservice1"/>
-    <contextParameter xmi:id="_tFMQD_IuEei04LlwpOmL_w" comment="" name="HDP_PRD_StagingDirectory" prompt="HDP_PRD_StagingDirectory?" promptNeeded="false" type="id_String" value="/user"/>
-    <contextParameter xmi:id="_tFMQEPIuEei04LlwpOmL_w" comment="" name="HDP_PRD_ResourceManagerScheduler" prompt="HDP_PRD_ResourceManagerScheduler?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:8030"/>
-    <contextParameter xmi:id="_tFMQEfIuEei04LlwpOmL_w" comment="" name="HDP_PRD_ResourceManager" prompt="HDP_PRD_ResourceManager?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:8032"/>
-    <contextParameter xmi:id="_tFMQEvIuEei04LlwpOmL_w" comment="" name="HDP_PRD_NameNodePrin" prompt="HDP_PRD_NameNodePrin?" promptNeeded="false" type="id_String" value="hdfs://testnameservice1"/>
-    <contextParameter xmi:id="_tFMQE_IuEei04LlwpOmL_w" comment="" name="HDP_PRD_JobHistroyPrin" prompt="HDP_PRD_JobHistroyPrin?" promptNeeded="false" type="id_String" value="mapred/${yarn.resourcemanager.hostname}"/>
-    <contextParameter xmi:id="_tFMQFPIuEei04LlwpOmL_w" comment="" name="HDP_PRD_KeyTab" prompt="HDP_PRD_KeyTab?" promptNeeded="false" type="id_String" value="/home/apps_dev/apps_dev.keytab"/>
-    <contextParameter xmi:id="_tFMQFfIuEei04LlwpOmL_w" comment="" name="HDP_PRD_Principal" prompt="HDP_PRD_Principal?" promptNeeded="false" type="id_String" value="apps_dev@OFFICE.CORP.INDOSAT.COM"/>
+  <talendfile:ContextType xmi:id="_gy-eOwNKEempO5IgaSiASw" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_gy-ePANKEempO5IgaSiASw" comment="" name="HDP_PRD_JTOrRMPrin" prompt="HDP_PRD_JTOrRMPrin?" promptNeeded="false" type="id_String" value="yarn/_HOST@OFFICE.CORP.INDOSAT.COM"/>
+    <contextParameter xmi:id="_gy-ePQNKEempO5IgaSiASw" comment="" name="HDP_PRD_JobHistory" prompt="HDP_PRD_JobHistory?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:10020"/>
+    <contextParameter xmi:id="_gy-ePgNKEempO5IgaSiASw" comment="" name="HDP_PRD_NameNodeUri" prompt="HDP_PRD_NameNodeUri?" promptNeeded="false" type="id_String" value="hdfs://testnameservice1"/>
+    <contextParameter xmi:id="_gy-ePwNKEempO5IgaSiASw" comment="" name="HDP_PRD_StagingDirectory" prompt="HDP_PRD_StagingDirectory?" promptNeeded="false" type="id_String" value="/user"/>
+    <contextParameter xmi:id="_gy-eQANKEempO5IgaSiASw" comment="" name="HDP_PRD_ResourceManagerScheduler" prompt="HDP_PRD_ResourceManagerScheduler?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:8030"/>
+    <contextParameter xmi:id="_gy-eQQNKEempO5IgaSiASw" comment="" name="HDP_PRD_ResourceManager" prompt="HDP_PRD_ResourceManager?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:8032"/>
+    <contextParameter xmi:id="_gy-eQgNKEempO5IgaSiASw" comment="" name="HDP_PRD_NameNodePrin" prompt="HDP_PRD_NameNodePrin?" promptNeeded="false" type="id_String" value="hdfs://testnameservice1"/>
+    <contextParameter xmi:id="_gy-eQwNKEempO5IgaSiASw" comment="" name="HDP_PRD_JobHistroyPrin" prompt="HDP_PRD_JobHistroyPrin?" promptNeeded="false" type="id_String" value="mapred/${yarn.resourcemanager.hostname}"/>
+    <contextParameter xmi:id="_gy-eRANKEempO5IgaSiASw" comment="" name="HDP_PRD_KeyTab" prompt="HDP_PRD_KeyTab?" promptNeeded="false" type="id_String" value="/home/apps_dev/apps_dev.keytab"/>
+    <contextParameter xmi:id="_gy-eRQNKEempO5IgaSiASw" comment="" name="HDP_PRD_Principal" prompt="HDP_PRD_Principal?" promptNeeded="false" type="id_String" value="apps_dev@OFFICE.CORP.INDOSAT.COM"/>
   </talendfile:ContextType>
-  <talendfile:ContextType xmi:id="_tFMQFvIuEei04LlwpOmL_w" confirmationNeeded="false" name="PRD">
-    <contextParameter xmi:id="_tFMQF_IuEei04LlwpOmL_w" comment="" name="HDP_PRD_JTOrRMPrin" prompt="HDP_PRD_JTOrRMPrin?" promptNeeded="false" type="id_String" value="yarn/_HOST@OFFICE.CORP.INDOSAT.COM"/>
-    <contextParameter xmi:id="_tFMQGPIuEei04LlwpOmL_w" comment="" name="HDP_PRD_JobHistory" prompt="HDP_PRD_JobHistory?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:10020"/>
-    <contextParameter xmi:id="_tFMQGfIuEei04LlwpOmL_w" comment="" name="HDP_PRD_NameNodeUri" prompt="HDP_PRD_NameNodeUri?" promptNeeded="false" type="id_String" value="hdfs://nameservice1"/>
-    <contextParameter xmi:id="_tFMQGvIuEei04LlwpOmL_w" comment="" name="HDP_PRD_StagingDirectory" prompt="HDP_PRD_StagingDirectory?" promptNeeded="false" type="id_String" value="/user"/>
-    <contextParameter xmi:id="_tFMQG_IuEei04LlwpOmL_w" comment="" name="HDP_PRD_ResourceManagerScheduler" prompt="HDP_PRD_ResourceManagerScheduler?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:8030"/>
-    <contextParameter xmi:id="_tFMQHPIuEei04LlwpOmL_w" comment="" name="HDP_PRD_ResourceManager" prompt="HDP_PRD_ResourceManager?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:8032"/>
-    <contextParameter xmi:id="_tFMQHfIuEei04LlwpOmL_w" comment="" name="HDP_PRD_NameNodePrin" prompt="HDP_PRD_NameNodePrin?" promptNeeded="false" type="id_String" value="hdfs://nameservice1"/>
-    <contextParameter xmi:id="_tFMQHvIuEei04LlwpOmL_w" comment="" name="HDP_PRD_JobHistroyPrin" prompt="HDP_PRD_JobHistroyPrin?" promptNeeded="false" type="id_String" value="mapred/${yarn.resourcemanager.hostname}"/>
-    <contextParameter xmi:id="_tFMQH_IuEei04LlwpOmL_w" comment="" name="HDP_PRD_KeyTab" prompt="HDP_PRD_KeyTab?" promptNeeded="false" type="id_String" value="/home/hdp-rev/hdp-rev.keytab"/>
-    <contextParameter xmi:id="_tFMQIPIuEei04LlwpOmL_w" comment="" name="HDP_PRD_Principal" prompt="HDP_PRD_Principal?" promptNeeded="false" type="id_String" value="hdp-rev@OFFICE.CORP.INDOSAT.COM"/>
+  <talendfile:ContextType xmi:id="_gy-eRgNKEempO5IgaSiASw" confirmationNeeded="false" name="PRD">
+    <contextParameter xmi:id="_gy-eRwNKEempO5IgaSiASw" comment="" name="HDP_PRD_JTOrRMPrin" prompt="HDP_PRD_JTOrRMPrin?" promptNeeded="false" type="id_String" value="yarn/_HOST@OFFICE.CORP.INDOSAT.COM"/>
+    <contextParameter xmi:id="_gy-eSANKEempO5IgaSiASw" comment="" name="HDP_PRD_JobHistory" prompt="HDP_PRD_JobHistory?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:10020"/>
+    <contextParameter xmi:id="_gy-eSQNKEempO5IgaSiASw" comment="" name="HDP_PRD_NameNodeUri" prompt="HDP_PRD_NameNodeUri?" promptNeeded="false" type="id_String" value="hdfs://nameservice1"/>
+    <contextParameter xmi:id="_gy-eSgNKEempO5IgaSiASw" comment="" name="HDP_PRD_StagingDirectory" prompt="HDP_PRD_StagingDirectory?" promptNeeded="false" type="id_String" value="/user"/>
+    <contextParameter xmi:id="_gy-eSwNKEempO5IgaSiASw" comment="" name="HDP_PRD_ResourceManagerScheduler" prompt="HDP_PRD_ResourceManagerScheduler?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:8030"/>
+    <contextParameter xmi:id="_gy-eTANKEempO5IgaSiASw" comment="" name="HDP_PRD_ResourceManager" prompt="HDP_PRD_ResourceManager?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:8032"/>
+    <contextParameter xmi:id="_gy-eTQNKEempO5IgaSiASw" comment="" name="HDP_PRD_NameNodePrin" prompt="HDP_PRD_NameNodePrin?" promptNeeded="false" type="id_String" value="hdfs://nameservice1"/>
+    <contextParameter xmi:id="_gy-eTgNKEempO5IgaSiASw" comment="" name="HDP_PRD_JobHistroyPrin" prompt="HDP_PRD_JobHistroyPrin?" promptNeeded="false" type="id_String" value="mapred/${yarn.resourcemanager.hostname}"/>
+    <contextParameter xmi:id="_gy-eTwNKEempO5IgaSiASw" comment="" name="HDP_PRD_KeyTab" prompt="HDP_PRD_KeyTab?" promptNeeded="false" type="id_String" value="/home/hdp-rev/hdp-rev.keytab"/>
+    <contextParameter xmi:id="_gy-eUANKEempO5IgaSiASw" comment="" name="HDP_PRD_Principal" prompt="HDP_PRD_Principal?" promptNeeded="false" type="id_String" value="hdp-rev@OFFICE.CORP.INDOSAT.COM"/>
   </talendfile:ContextType>
-  <talendfile:ContextType xmi:id="_tFMQIfIuEei04LlwpOmL_w" confirmationNeeded="false" name="UAT">
-    <contextParameter xmi:id="_tFMQIvIuEei04LlwpOmL_w" comment="" name="HDP_PRD_JTOrRMPrin" prompt="HDP_PRD_JTOrRMPrin?" promptNeeded="false" type="id_String" value="yarn/_HOST@OFFICE.CORP.INDOSAT.COM"/>
-    <contextParameter xmi:id="_tFMQI_IuEei04LlwpOmL_w" comment="" name="HDP_PRD_JobHistory" prompt="HDP_PRD_JobHistory?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:10020"/>
-    <contextParameter xmi:id="_tFMQJPIuEei04LlwpOmL_w" comment="" name="HDP_PRD_NameNodeUri" prompt="HDP_PRD_NameNodeUri?" promptNeeded="false" type="id_String" value="hdfs://nameservice1"/>
-    <contextParameter xmi:id="_tFMQJfIuEei04LlwpOmL_w" comment="" name="HDP_PRD_StagingDirectory" prompt="HDP_PRD_StagingDirectory?" promptNeeded="false" type="id_String" value="/user"/>
-    <contextParameter xmi:id="_tFMQJvIuEei04LlwpOmL_w" comment="" name="HDP_PRD_ResourceManagerScheduler" prompt="HDP_PRD_ResourceManagerScheduler?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:8030"/>
-    <contextParameter xmi:id="_tFMQJ_IuEei04LlwpOmL_w" comment="" name="HDP_PRD_ResourceManager" prompt="HDP_PRD_ResourceManager?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:8032"/>
-    <contextParameter xmi:id="_tFMQKPIuEei04LlwpOmL_w" comment="" name="HDP_PRD_NameNodePrin" prompt="HDP_PRD_NameNodePrin?" promptNeeded="false" type="id_String" value="hdfs://nameservice1"/>
-    <contextParameter xmi:id="_tFMQKfIuEei04LlwpOmL_w" comment="" name="HDP_PRD_JobHistroyPrin" prompt="HDP_PRD_JobHistroyPrin?" promptNeeded="false" type="id_String" value="mapred/${yarn.resourcemanager.hostname}"/>
-    <contextParameter xmi:id="_tFMQKvIuEei04LlwpOmL_w" comment="" name="HDP_PRD_KeyTab" prompt="HDP_PRD_KeyTab?" promptNeeded="false" type="id_String" value="/home/hdp-rev/hdp-rev.keytab"/>
-    <contextParameter xmi:id="_tFMQK_IuEei04LlwpOmL_w" comment="" name="HDP_PRD_Principal" prompt="HDP_PRD_Principal?" promptNeeded="false" type="id_String" value="hdp-rev@OFFICE.CORP.INDOSAT.COM"/>
+  <talendfile:ContextType xmi:id="_gy-eUQNKEempO5IgaSiASw" confirmationNeeded="false" name="UAT">
+    <contextParameter xmi:id="_gy-eUgNKEempO5IgaSiASw" comment="" name="HDP_PRD_JTOrRMPrin" prompt="HDP_PRD_JTOrRMPrin?" promptNeeded="false" type="id_String" value="yarn/_HOST@OFFICE.CORP.INDOSAT.COM"/>
+    <contextParameter xmi:id="_gy-eUwNKEempO5IgaSiASw" comment="" name="HDP_PRD_JobHistory" prompt="HDP_PRD_JobHistory?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:10020"/>
+    <contextParameter xmi:id="_gy-eVANKEempO5IgaSiASw" comment="" name="HDP_PRD_NameNodeUri" prompt="HDP_PRD_NameNodeUri?" promptNeeded="false" type="id_String" value="hdfs://nameservice1"/>
+    <contextParameter xmi:id="_gy-eVQNKEempO5IgaSiASw" comment="" name="HDP_PRD_StagingDirectory" prompt="HDP_PRD_StagingDirectory?" promptNeeded="false" type="id_String" value="/user"/>
+    <contextParameter xmi:id="_gy-eVgNKEempO5IgaSiASw" comment="" name="HDP_PRD_ResourceManagerScheduler" prompt="HDP_PRD_ResourceManagerScheduler?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:8030"/>
+    <contextParameter xmi:id="_gy-eVwNKEempO5IgaSiASw" comment="" name="HDP_PRD_ResourceManager" prompt="HDP_PRD_ResourceManager?" promptNeeded="false" type="id_String" value="${yarn.resourcemanager.hostname}:8032"/>
+    <contextParameter xmi:id="_gy-eWANKEempO5IgaSiASw" comment="" name="HDP_PRD_NameNodePrin" prompt="HDP_PRD_NameNodePrin?" promptNeeded="false" type="id_String" value="hdfs://nameservice1"/>
+    <contextParameter xmi:id="_gy-eWQNKEempO5IgaSiASw" comment="" name="HDP_PRD_JobHistroyPrin" prompt="HDP_PRD_JobHistroyPrin?" promptNeeded="false" type="id_String" value="mapred/${yarn.resourcemanager.hostname}"/>
+    <contextParameter xmi:id="_gy-eWgNKEempO5IgaSiASw" comment="" name="HDP_PRD_KeyTab" prompt="HDP_PRD_KeyTab?" promptNeeded="false" type="id_String" value="/home/hdp-rev/hdp-rev.keytab"/>
+    <contextParameter xmi:id="_gy-eWwNKEempO5IgaSiASw" comment="" name="HDP_PRD_Principal" prompt="HDP_PRD_Principal?" promptNeeded="false" type="id_String" value="hdp-rev@OFFICE.CORP.INDOSAT.COM"/>
   </talendfile:ContextType>
 </xmi:XMI>
